@@ -1,8 +1,17 @@
 @charset "UTF-8";
 
 :root {
-    
+    :root {
+    --couleur-Jaune-Fonce: #69510E;
+    --couleur-Jaune-Dore: #D4AF37;
+    --couleur-Jaune-Pale: #E5DB69;
+    --couleur-Gris-Pale: #B4B4B4;
+
     font-size: 16px;
+    font-family: Helvetica, sans-serif;
+    line-height: 1.2;
+    scroll-behavior: smooth;
+}
 }
 
 body {
@@ -42,5 +51,5 @@ nav {
 }
 
 .menu .menu__lien {
-    color: ;
+    color: var(--couleur-Jaune-Dore);
 }
