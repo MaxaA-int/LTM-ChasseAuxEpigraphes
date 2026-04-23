@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+:root {
+    
+    font-size: 16px;
+}
+
+body {
+    background-color: #1A1A1A;
+}
+
+header {
+    max-width: 1440px;
+}
+
+nav {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.nav__lien {
+    font-size: 0;
+}
+
+.nav__image {
+    width: 500px;
+    height: auto;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 2rem;
+    list-style-type: none;
+    font-size: 1.3rem;
+    margin-left: -4rem;
+}
+
+.menu .menu__lien {
+    color: ;
+}
