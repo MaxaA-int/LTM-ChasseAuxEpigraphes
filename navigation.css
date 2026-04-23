@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 :root {
-    :root {
     --couleur-Jaune-Fonce: #69510E;
     --couleur-Jaune-Dore: #D4AF37;
     --couleur-Jaune-Pale: #E5DB69;
@@ -12,23 +11,22 @@
     line-height: 1.2;
     scroll-behavior: smooth;
 }
-}
 
 body {
     background-color: #1A1A1A;
 }
 
-header {
-    max-width: 1440px;
-}
-
 nav {
-    max-width: 1000px;
+    max-width: 360px;
     margin: 0 auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+}
+
+.nav__logo {
+    z-index: 102;;
 }
 
 .nav__lien {
@@ -36,20 +34,85 @@ nav {
 }
 
 .nav__image {
-    width: 500px;
+    width: 333px;
     height: auto;
 }
 
 .menu {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-end;
-    gap: 2rem;
+    gap: 1rem;
     list-style-type: none;
-    font-size: 1.3rem;
-    margin-left: -4rem;
+    font-size: 1rem;
+    text-align: right;
+    width: 360px;
+    padding: 0;
+    margin-top: -1.5rem;
+    z-index: 101;
+
+    background: linear-gradient(0.25turn, #1A1A1A, #69510e4d);
+    border-radius: 1rem;
+    padding-block: 1rem;
+}
+
+.menu .menu__item {
+    padding-inline: 1rem;
+    background-color: #1a1a1a78;
+    padding-block: 0.5rem;
 }
 
 .menu .menu__lien {
     color: var(--couleur-Jaune-Dore);
+    text-decoration: none;
+    font-variant: small-caps;
+}
+
+.menu .menu__lien:hover {
+    color: var(--couleur-Jaune-Pale);
+    text-decoration: underline;
+}
+
+.menu .menu__lien:focus-visible {
+    outline: var(--couleur-Jaune-Dore) 1px solid;
+    border-radius: 0.5rem;
+}
+
+/* AFFICHAGE TABLETTE */
+
+@media (min-width: 48rem) {
+    
+}
+
+/* AFFICHAGE TABLE */
+
+@media (min-width: 62.5rem) {
+    nav {
+        max-width: 1000px;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+    .nav__image {
+        width: 500px;
+    }
+
+    .menu {
+        flex-direction: row;
+        gap: 2rem;
+        font-size: 1.3rem;
+        margin: 0 0 0 -10rem;
+        padding: 0;
+        width: auto;
+
+        background: none;
+
+    }
+
+    .menu .menu__item {
+        padding-inline: none;
+        background-color: none;
+        padding-block: none;
+    }
+
 }
