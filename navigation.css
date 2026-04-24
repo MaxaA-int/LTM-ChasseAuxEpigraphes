@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 :root {
     --couleur-Jaune-Fonce: #69510E;
     --couleur-Jaune-Dore: #D4AF37;
@@ -34,32 +40,31 @@ nav {
 }
 
 .nav__image {
-    width: 333px;
+    width: 100%;
     height: auto;
 }
 
 .menu {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     gap: 1rem;
     list-style-type: none;
     font-size: 1rem;
     text-align: right;
-    width: 360px;
-    padding: 0;
+    padding-block: 1rem;
     margin-top: -1.5rem;
     z-index: 101;
-
     background: linear-gradient(0.25turn, #1A1A1A, #69510e4d);
     border-radius: 1rem;
-    padding-block: 1rem;
+    width: 100%;
 }
 
 .menu .menu__item {
-    padding-inline: 1rem;
+    padding: 0.5rem 1.5rem 0.5rem 0rem;
+    margin-right: 1rem;
     background-color: #1a1a1a78;
-    padding-block: 0.5rem;
+    border-radius: 1rem;
 }
 
 .menu .menu__lien {
@@ -80,14 +85,26 @@ nav {
 
 /* AFFICHAGE TABLETTE */
 
-@media (min-width: 48rem) {
-    
+@media (min-width: 37.5rem) {
+    .nav {
+        max-width: 600px;
+    }
+
+    .menu {
+        flex-direction: row;
+    }
+
+    .menu .menu__item {
+        margin: 0;
+        padding: 0.5rem 1.5rem;
+
+    }
 }
 
 /* AFFICHAGE TABLE */
 
-@media (min-width: 62.5rem) {
-    nav {
+@media (min-width: 50rem) {
+    .nav {
         max-width: 1000px;
         flex-direction: row;
         align-items: flex-end;
@@ -101,18 +118,14 @@ nav {
         flex-direction: row;
         gap: 2rem;
         font-size: 1.3rem;
-        margin: 0 0 0 -10rem;
+        margin: 0 0 0 -20rem;
         padding: 0;
-        width: auto;
-
         background: none;
-
     }
 
     .menu .menu__item {
-        padding-inline: none;
-        background-color: none;
-        padding-block: none;
+        padding-inline: 0;
+        background-color: transparent;
+        padding-block: 0;
     }
-
 }
