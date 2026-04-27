@@ -35,7 +35,6 @@ nav {
     align-items: center;
     border-bottom: solid 2px var(--couleur-Jaune-Dore);
     padding-bottom: 1rem;
-
 }
 
 .nav__logo {
@@ -219,6 +218,27 @@ nav {
 /* CSS FOOTER */
 /* ------------------ */
 
+footer {
+    max-width: 360px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__menu {
+    
+}
+
+.footer__reseaux-sociaux {
+
+}
+
+.footer__texte-containeur {
+
+}
+
 /* Autres, modificateurs, effets (initial, survol, focus) */
 
 .lien {
@@ -235,4 +255,17 @@ nav {
 .lien:focus-visible {
     outline: var(--couleur-Jaune-Dore) 1px solid;
     border-radius: 0.5rem;
+}
+
+.facebook:hover .lien-facebook {
+    content: url(../images/icones/facebook/survol.svg);
+}
+.instagram:hover .lien-instagram {
+    content: url(../images/icones/instagram/survol.svg);
+}
+.twitter:hover .lien-twitter {
+    content: url(../images/icones/twitter/survol.svg);
+}
+.youtube:hover .lien-youtube {
+    content: url(../images/icones/youtube/survol.svg);
 }
