@@ -22,6 +22,10 @@ body {
     background-color: #1A1A1A;
 }
 
+/* ------------------ */
+/* CSS NAVIGATION */
+/* ------------------ */
+
 nav {
     max-width: 360px;
     margin: 0 auto;
@@ -29,6 +33,9 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-bottom: solid 2px var(--couleur-Jaune-Dore);
+    padding-bottom: 1rem;
+
 }
 
 .nav__logo {
@@ -72,22 +79,6 @@ nav {
     margin-right: 1rem;
     background-color: #1a1a1a78;
     border-radius: 1rem;
-}
-
-.menu .menu__lien {
-    color: var(--couleur-Jaune-Dore);
-    text-decoration: none;
-    font-variant: small-caps;
-}
-
-.menu .menu__lien:hover {
-    color: var(--couleur-Jaune-Pale);
-    text-decoration: underline;
-}
-
-.menu .menu__lien:focus-visible {
-    outline: var(--couleur-Jaune-Dore) 1px solid;
-    border-radius: 0.5rem;
 }
 
 /* AFFICHAGE TABLETTE */
@@ -222,3 +213,26 @@ nav {
 /* ------------------ */
 /* FIN CSS NAVIGATION */
 /* ------------------ */
+
+
+/* ------------------ */
+/* CSS FOOTER */
+/* ------------------ */
+
+/* Autres, modificateurs, effets (initial, survol, focus) */
+
+.lien {
+    color: var(--couleur-Jaune-Dore);
+    text-decoration: none;
+    font-variant: small-caps;
+}
+
+.lien:hover {
+    color: var(--couleur-Jaune-Pale);
+    text-decoration: underline;
+}
+
+.lien:focus-visible {
+    outline: var(--couleur-Jaune-Dore) 1px solid;
+    border-radius: 0.5rem;
+}
