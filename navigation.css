@@ -44,6 +44,13 @@ nav {
     height: auto;
 }
 
+.nav .nav__barre {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+}
+
 .menu {
     display: flex;
     flex-direction: column;
@@ -114,6 +121,10 @@ nav {
         width: 500px;
     }
 
+    .nav .nav__barre {
+        flex-direction: unset;
+    }
+
     .menu {
         flex-direction: row;
         gap: 2rem;
@@ -121,6 +132,7 @@ nav {
         margin: 0 0 0 -20rem;
         padding: 0;
         background: none;
+        width: fit-content;
     }
 
     .menu .menu__item {
@@ -139,7 +151,12 @@ nav {
     color: var(--couleur-Jaune-Dore);
     border: none;
     padding: 10px;
+    margin: -3rem 0 0.5rem auto;
     min-width: 40px;
+    min-height: 40px;
+    border-radius: 1rem;
+    position: inherit;
+    z-index: 103;
 }
 
 @media (min-width: 48rem) {
@@ -164,7 +181,6 @@ nav {
     content: "";
     width: 1em;
     height: 1em;
-    margin-right: 0.5em;
     background-image: url(ico-fermer.svg);
     background-size: auto 1em;
 }
@@ -175,8 +191,6 @@ nav {
 
 /* Liste du menu */
 .js .menu {
-    margin: 0;
-    padding: 0;
     max-height: none;
 }
 
@@ -200,6 +214,8 @@ nav {
     .js .nav--closed .menu {
         max-height: 0;
         transition: max-height 0.5s;
+        margin: 0;
+        padding: 0;
     }
 }
 
