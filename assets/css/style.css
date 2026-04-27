@@ -181,12 +181,12 @@ nav {
     content: "";
     width: 1em;
     height: 1em;
-    background-image: url(ico-fermer.svg);
+    background-image: url(../images/icones/ico-fermer.svg);
     background-size: auto 1em;
 }
 
 .nav--closed .nav__control:before {
-    background-image: url(ico-menu.svg);
+    background-image: url(../images/icones/ico-menu.svg);
 }
 
 /* Liste du menu */
