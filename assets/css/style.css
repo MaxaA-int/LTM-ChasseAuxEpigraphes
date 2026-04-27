@@ -1,5 +1,64 @@
 @charset "UTF-8";
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Carte */
+
+/* Concours */
+
 .parent {
   display: grid;
   grid-template-areas: "header header" "main main";
@@ -10,3 +69,4 @@
 .nav { grid-area: main; }
 .main { grid-area: main; }
 .footer { grid-area: main; }
+
