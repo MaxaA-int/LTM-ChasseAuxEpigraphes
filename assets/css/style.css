@@ -29,7 +29,6 @@ body {
 nav {
     max-width: 360px;
     margin: 0 auto;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -52,13 +51,11 @@ nav {
 
 .nav .nav__barre {
     width: 100%;
-    display: flex;
     justify-content: right;
     flex-direction: column;
 }
 
 .menu {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
@@ -100,7 +97,7 @@ nav {
 
 /* AFFICHAGE TABLE */
 
-@media (min-width: 48rem) {
+@media (min-width: 50rem) {
     .nav {
         max-width: 1000px;
         flex-direction: row;
@@ -149,7 +146,7 @@ nav {
     z-index: 103;
 }
 
-@media (min-width: 48rem) {
+@media (min-width: 50rem) {
     .nav__control {
         display: none;
     }
@@ -184,7 +181,7 @@ nav {
     max-height: none;
 }
 
-@media (min-width: 48rem) {
+@media (min-width: 50rem) {
     .menu__item {
         display: inline-block;
     }
@@ -194,7 +191,7 @@ nav {
     }
 }
 
-@media (max-width: 48rem) {
+@media (max-width: 50rem) {
     .js .menu {
         max-height: 100vh;
         overflow: hidden;
@@ -221,22 +218,63 @@ nav {
 footer {
     max-width: 360px;
     margin: 0 auto;
-    display: flex;
+    border-top: 2px solid var(--couleur-Jaune-Dore);
+    padding-top: 1rem;
+}
+
+.footer__containeur {
+    gap: 2rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
 }
 
 .footer__menu {
-    
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+    gap: 2rem;
 }
 
 .footer__reseaux-sociaux {
-
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 320px;
 }
 
 .footer__texte-containeur {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    color: white;
+}
 
+/* AFFICHAGE TABLETTE */
+
+@media (min-width: 37.5rem) {
+    footer {
+        max-width: 600px;
+    }
+
+    .footer__menu {
+        justify-content: space-between;
+    }
+}
+
+/* AFFICHAGE TABLE */
+
+@media (min-width: 50rem) {
+    footer {
+        max-width: 1000px;
+    }
+
+    .footer__containeur {
+        max-width: 800px;
+    }
 }
 
 /* Autres, modificateurs, effets (initial, survol, focus) */
@@ -268,4 +306,8 @@ footer {
 }
 .youtube:hover .lien-youtube {
     content: url(../images/icones/youtube/survol.svg);
+}
+
+.flex {
+    display: flex;
 }
