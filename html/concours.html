@@ -11,7 +11,7 @@
 
     
 
-        <h1 class="titre__carte"> Concours </h1>
+        <h1 class="titre__concours"> Concours </h1>
 
     </header>
 
@@ -51,7 +51,7 @@
 
      <p> Pour participer, remplissez le formulaire ci-dessous.</p>
 
-     <form class="formualire__participation">
+     <form class="formualire__participation" action="">
         <fieldset>
             <legend> Formulaire de participation</legend>
 
@@ -67,7 +67,7 @@
             <label for="ville"> Ville </label>
             <input type="text" id="ville" name="ville" required>
 
-            <label for="province">  <p> Province </p> </label>
+            <label for="province"> Province  </label>
             <input type="" id="province" name="province" required>
 
             <label for="codepostal"> Code postal </label>
@@ -77,17 +77,12 @@
             <input type="number" id="telephone" name="telephone" required>
 
             <label for="chasseauxepigraphesresolues"> Chasse aux épigraphes résolue </label>
-            <input type="text" id="chasseauxepigraphesresolues" name="chasseauxepigraphesresolues" required>
 
-            
+            <h4 class="concours__formulaire--titre"> Le petit-déjeuner à la carte </h4>
+            <textarea name="message" rows="10" cols="50"> Exemple : Une militante d’origine française  a bu une bouteille de bière dans l’atelier du sculpteur</textarea>
 
-
-
-
-
-
+            <input type="submit" value="Soumettre le formulaire">
         </fieldset>
-
      </form>
 
 </body>

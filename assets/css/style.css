@@ -1,2 +1,12 @@
 @charset "UTF-8";
 
+.parent {
+  display: grid;
+  grid-template-areas: "header header" "main main";
+}
+
+/* Items — chaque nom correspond à une zone */
+.header { grid-area: header; }
+.nav { grid-area: main; }
+.main { grid-area: main; }
+.footer { grid-area: main; }
