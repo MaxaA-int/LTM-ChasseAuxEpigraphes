@@ -103,7 +103,7 @@ nav {
 
 /* AFFICHAGE TABLE */
 
-@media (min-width: 50rem) {
+@media (min-width: 48rem) {
     .nav {
         max-width: 1000px;
         flex-direction: row;
@@ -129,3 +129,80 @@ nav {
         padding-block: 0;
     }
 }
+
+/* -------------- */
+/* Bouton du menu */
+/* -------------- */
+
+.nav__control {
+    background-color: var(--couleur-Jaune-Fonce);
+    color: var(--couleur-Jaune-Dore);
+    border: none;
+    padding: 10px;
+    min-width: 40px;
+}
+
+@media (min-width: 48rem) {
+    .nav__control {
+        display: none;
+    }
+}
+
+.nav__control:hover,
+.nav__control:active {
+    color: var(--couleur-Jaune-Pale);
+}
+
+.nav__control:focus-visible {
+    outline-offset: -5px;
+    outline: var(--couleur-Jaune-Fonce) auto 5px;
+}
+
+
+.nav__control:before {
+    display: inline-block;
+    content: "";
+    width: 1em;
+    height: 1em;
+    margin-right: 0.5em;
+    background-image: url(ico-fermer.svg);
+    background-size: auto 1em;
+}
+
+.nav--closed .nav__control:before {
+    background-image: url(ico-menu.svg);
+}
+
+/* Liste du menu */
+.js .menu {
+    margin: 0;
+    padding: 0;
+    max-height: none;
+}
+
+@media (min-width: 48rem) {
+    .menu__item {
+        display: inline-block;
+    }
+
+    .js .menu {
+        margin: 0 0 0 -20rem;
+    }
+}
+
+@media (max-width: 48rem) {
+    .js .menu {
+        max-height: 100vh;
+        overflow: hidden;
+        transition: max-height 2s;
+    }
+
+    .js .nav--closed .menu {
+        max-height: 0;
+        transition: max-height 0.5s;
+    }
+}
+
+/* ------------------ */
+/* FIN CSS NAVIGATION */
+/* ------------------ */
