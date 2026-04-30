@@ -57,7 +57,7 @@ nav {
 
 /* AFFICHAGE TABLETTE */
 
-@media (min-width: 37.5rem) {
+@media (min-width: 30rem) {
     .nav {
         max-width: 600px;
     }
@@ -75,7 +75,7 @@ nav {
 
 /* AFFICHAGE TABLE */
 
-@media (min-width: 50rem) {
+@media (min-width: 60rem) {
     .nav {
         max-width: 1000px;
         flex-direction: row;
@@ -124,7 +124,7 @@ nav {
     z-index: 103;
 }
 
-@media (min-width: 50rem) {
+@media (min-width: 60rem) {
     .nav__control {
         display: none;
     }
@@ -159,7 +159,7 @@ nav {
     max-height: none;
 }
 
-@media (min-width: 50rem) {
+@media (min-width: 60rem) {
     .menu__item {
         display: inline-block;
     }
@@ -169,7 +169,7 @@ nav {
     }
 }
 
-@media (max-width: 50rem) {
+@media (max-width: 60rem) {
     .js .menu {
         max-height: 100vh;
         overflow: hidden;
@@ -233,7 +233,7 @@ footer {
 
 /* AFFICHAGE TABLETTE */
 
-@media (min-width: 37.5rem) {
+@media (min-width: 30rem) {
     footer {
         max-width: 600px;
     }
@@ -245,7 +245,7 @@ footer {
 
 /* AFFICHAGE TABLE */
 
-@media (min-width: 50rem) {
+@media (min-width: 60rem) {
     footer {
         max-width: 1000px;
     }

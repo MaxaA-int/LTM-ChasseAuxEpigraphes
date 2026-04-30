@@ -1,8 +1,9 @@
 @charset "UTF-8";
 
 /* IMPORTATION DES AUTRES CSS */
-@import 'normalize.css';
-@import 'navfooter.css';
+@import 'normalize.css'; /* Pour réinitialiser le chargement d'une page */
+@import 'navfooter.css'; /* Stylisation de la Navigation et du Footer */
+@import 'accueil.css'; /* Stylisation du body de l'Accueil (index.html) */
 
 * {
     margin: 0px;
@@ -24,4 +25,56 @@
 
 body {
     background-color: #1A1A1A;
+}
+
+.main {
+    max-width: 100%;
+}
+
+.main .main__containeur {
+    max-width: 330px;
+    margin: 0 auto;
+}
+
+@media (min-width: 30rem) {
+    .main .main__containeur {
+        max-width: 670px;
+    }
+}
+
+@media (min-width: 63rem) {
+    .main .main__containeur {
+        max-width: 1000px;
+    }
+}
+
+/* Différents états des boutons */
+
+/* Initial */
+button {
+    background-color: var(--couleur-Jaune-Dore);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: none;
+    color: #fff;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+button:hover,
+button:active {
+    background-color: var(--couleur-Jaune-Pale);
+}
+
+button:focus-visible {
+    background-color: var(--couleur-Jaune-Pale);
+    outline: 2px solid var(--couleur-Jaune-Fonce);
+}
+
+button:disabled {
+    background-color: #2B2B2B;
+    color: #B4B4B4;
 }
