@@ -1,2 +1,88 @@
 @charset "UTF-8";
+.contenu {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background-color: #1A1A1A;
+    margin: 0;
+    padding: 0;                                                                                             
+}
+.main__chasse {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+.main_titre__chasse {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #C9A84C;
+}
 
+.main_liste_chasse {
+    list-style-type: disc;
+    text-align: left;
+    max-width: 500px;
+    width: 100%;
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+}
+.main_tableau_chasse {
+    display: grid;
+    grid-template-areas: 
+    "item1 item2"
+    "item3 item3";
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    border: 2px solid #C9A84C;
+    margin-bottom: 1.5rem;
+}
+.main_tableau_chasse__ligne-haut {
+    display: contents;
+}
+.main-tableau_chasse__ligne-bas {
+    display: contents;
+}
+.main_tableau_chasse_item1 {
+    grid-area: item1;}
+.main_tableau_chasse_item2 {
+    grid-area: item2;}
+.main_tableau_chasse_item3 {
+    grid-area: item3;}
+    .main_tableau_chasse_item1,
+    .main_tableau_chasse_item2,
+    .main_tableau_chasse_item3 {
+        border: 1px solid #C9A84C;
+        overflow:hidden;
+    }
+    .main_tableau_chasse_item1 img,
+    .main_tableau_chasse_item2 img,
+    .main_tableau_chasse_item3 img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        display: block;
+    }
+    .main_bouton_chasse {
+        background-color: #C9A84C;
+        color: #1A1A1A;
+        border: none;
+        padding: 0.85rem 2.5rem;
+        font-size: 0.9rem;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 1rem;
+        transition: background-color 0.3s ease;
+    }
+    @media (max-width: 600px) {
+        .main_tableau_chasse {
+            grid-template-areas: 
+            "item1"
+            "item2"
+            "item3";
+            grid-template-columns: 1fr;
+        }
+    }
