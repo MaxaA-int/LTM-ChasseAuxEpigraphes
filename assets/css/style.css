@@ -96,6 +96,12 @@ button {
     gap: 1rem;
 }
 
+button a {
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+}
+
 button:hover,
 button:active {
     background-color: var(--couleur-Jaune-Pale);
@@ -108,5 +114,9 @@ button:focus-visible {
 
 button:disabled {
     background-color: #2B2B2B;
-    color: #B4B4B4;
+    color: --couleur-Gris-Pale;
+}
+
+button:disabled a {
+    color: --couleur-Gris-Pale;
 }
