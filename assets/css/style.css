@@ -1,15 +1,14 @@
 @charset "UTF-8";
 
+/* IMPORTATION DES AUTRES CSS */
+@import 'normalize.css';
+@import 'navfooter.css';
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-
-/* IMPORTATION DES AUTRES CSS */
-@import 'normalize.css';
-@import 'navfooter.css';
-
 
 :root {
     --couleur-Jaune-Fonce: #69510E;
