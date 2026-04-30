@@ -4,6 +4,7 @@
 @import 'normalize.css'; /* Pour réinitialiser le chargement d'une page */
 @import 'navfooter.css'; /* Stylisation de la Navigation et du Footer */
 @import 'accueil.css'; /* Stylisation du body de l'Accueil (index.html) */
+@import 'galerie.css'; /* Stylisation du body de la page galeriedespersonnage.html */
 
 * {
     margin: 0px;
@@ -16,11 +17,37 @@
     --couleur-Jaune-Dore: #D4AF37;
     --couleur-Jaune-Pale: #E5DB69;
     --couleur-Gris-Pale: #B4B4B4;
+    --couleur-Lime: #9BB227;
 
     font-size: 16px;
     font-family: Helvetica, sans-serif;
     line-height: 1.2;
     scroll-behavior: smooth;
+}
+
+/* Pour cacher visuellement tout en gardant accessible un contenu */
+.screen-reader-only,
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 0.0625rem; 
+    margin: -0.0625rem; 
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 0.0625rem; 
+}
+
+.screen-reader-only.focusable:active,
+.screen-reader-only.focusable:focus,
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
 }
 
 body {
@@ -42,7 +69,7 @@ body {
     }
 }
 
-@media (min-width: 63rem) {
+@media (min-width: 60rem) {
     .main .main__containeur {
         max-width: 1000px;
     }
