@@ -5,6 +5,9 @@
     font-family: 'Arial', sans-serif;
     color: #fff;
     background-color: #1A1A1A;
+    background-image: url('/assets/images/Lignes_fond.png');
+    background-repeat: repeat;
+    background-position: center;
     margin: 0;
     padding: 0;                                                                                             
 }
@@ -14,6 +17,8 @@
     align-items: center;
     padding: 2rem 1rem;
     text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 .main_titre__chasse {
     font-size: 2.5rem;
@@ -25,11 +30,18 @@
 .main_liste_chasse {
     list-style-type: disc;
     text-align: left;
-    max-width: 500px;
+    max-width: 600px;
     width: 100%;
     margin-bottom: 2rem;
-    padding-left: 1.5rem;
 }
+.main_liste_chasse_item1, .main_liste_chasse_item3 {
+    margin-left: 50%;
+}
+.main_liste_chasse_item2 {
+    margin-right: 50%;
+    text-align: center;
+}
+
 .main_tableau_chasse {
     display: grid;
     grid-template-areas: 
