@@ -4,6 +4,13 @@
  */
 
 //*******************
+// Écouteurs d'événements
+//*******************
+window.addEventListener('load', function () {
+    menu.configurerNav();
+});
+
+//*******************
 // Déclaration d'objet(s)
 //*******************
 
@@ -130,9 +137,4 @@ let menu = {
     },
 };
 
-//*******************
-// Écouteurs d'événements
-//*******************
-window.addEventListener('load', function () {
-    menu.configurerNav();
-});
+/* JS DU FILTRE */
