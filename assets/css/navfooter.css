@@ -122,6 +122,7 @@ nav {
     border-radius: 1rem;
     position: inherit;
     z-index: 103;
+    display: block;
 }
 
 @media (min-width: 60rem) {
