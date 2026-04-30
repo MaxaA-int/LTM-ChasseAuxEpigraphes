@@ -1,18 +1,65 @@
-body {
+@charset "UTF-8";
+
+/* CSS POUR LE FILTRE */
+
+.liste-filtre {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.liste-filtre li label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: white;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    overflow: hidden; 
+}
+
+.liste-filtre li img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.liste-filtre input[type="radio"]:checked + label {
+    outline: 0.3rem solid var(--couleur-Lime); 
+}
+
+.liste-filtre li label:hover {
+    outline: 0.2rem solid var(--couleur-Jaune-Pale); 
+}
+
+/* mobile */
+@media (min-width: 30rem) {
+    .liste-filtre {
+        padding-left: 0;
+    }
+}
+
+/* CSS POUR LA CARTE / GALERIE DES PERSONNAGES */
+
+/* body {
     background-color: #121212;
-    /* enlever lors integration car ca fait juste centrer tout dans la page */
     display: flex;
     justify-content: center;
     padding: 1.25rem; 
     margin: 0;
     font-family: Arial, sans-serif;
-}
+} */
 
 /* mobile */
 .galerie-container {
     width: 100%;
     max-width: 25rem; 
-    border: 0.125rem solid #D4AF37; 
+    border: 0.125rem solid var(--couleur-Jaune-Dore); 
     padding: 1.25rem 0.62rem; 
     display: flex;
     flex-wrap: wrap;
@@ -55,12 +102,7 @@ body {
 }
 
 /* tablette */
-@media (min-width: 33rem) {
-    .galerie-container {
-        max-width: 43.75rem;
-        gap: 1.25rem;
-    }
-
+@media (min-width: 30rem) {
     .carte {
         width: 30%;
     }
@@ -71,11 +113,7 @@ body {
 }
 
 /* desktop */
-@media (min-width: 64rem) {
-    .galerie-container {
-        max-width: 62.5rem; 
-    }
-
+@media (min-width: 60rem) {
     .carte {
         width: 22%;
     }
