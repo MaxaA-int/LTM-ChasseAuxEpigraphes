@@ -61,6 +61,11 @@ body {
 .main .main__containeur {
     max-width: 330px;
     margin: 0 auto;
+    color: white;
+}
+
+.main .main__titre {
+    color: var(--couleur-Jaune-Dore);
 }
 
 @media (min-width: 30rem) {

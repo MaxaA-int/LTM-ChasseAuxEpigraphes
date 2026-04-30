@@ -1,6 +1,15 @@
 @charset "UTF-8";
 
 /* CSS POUR LE FILTRE */
+.filtre__containeur {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    gap: 1rem;
+    padding-block: 2rem;
+}
 
 .liste-filtre {
     list-style-type: none;
@@ -25,7 +34,6 @@
 .liste-filtre li img {
     width: 100%;
     height: auto;
-    display: block;
 }
 
 
@@ -41,24 +49,15 @@
 @media (min-width: 30rem) {
     .liste-filtre {
         padding-left: 0;
+        margin-left: 3rem;
     }
 }
 
 /* CSS POUR LA CARTE / GALERIE DES PERSONNAGES */
 
-/* body {
-    background-color: #121212;
-    display: flex;
-    justify-content: center;
-    padding: 1.25rem; 
-    margin: 0;
-    font-family: Arial, sans-serif;
-} */
-
 /* mobile */
 .galerie-container {
     width: 100%;
-    max-width: 25rem; 
     border: 0.125rem solid var(--couleur-Jaune-Dore); 
     padding: 1.25rem 0.62rem; 
     display: flex;

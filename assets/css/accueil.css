@@ -12,6 +12,7 @@
     padding-bottom: 56.25%;
     height: 0;
     margin: 10px 0;
+    outline: 2px solid var(--couleur-Jaune-Dore);
 }
 
 .main__video iframe {
