@@ -102,16 +102,19 @@ button a {
     text-decoration: none;
 }
 
+/* Survol */
 button:hover,
 button:active {
     background-color: var(--couleur-Jaune-Pale);
 }
 
+/* Focus */
 button:focus-visible {
     background-color: var(--couleur-Jaune-Pale);
     outline: 2px solid var(--couleur-Jaune-Fonce);
 }
 
+/* Disabled */
 button:disabled {
     background-color: #2B2B2B;
     color: --couleur-Gris-Pale;

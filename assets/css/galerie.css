@@ -100,6 +100,16 @@
     line-height: 1.3;
 }
 
+.carte .carte__nom-personnage {
+    color: var(--couleur-Jaune-Dore);
+    display: block;
+    font-size: 1.2rem;
+}
+
+.display-none {
+    display: none;
+}
+
 /* tablette */
 @media (min-width: 30rem) {
     .carte {
