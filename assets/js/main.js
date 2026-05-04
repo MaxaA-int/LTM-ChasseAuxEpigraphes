@@ -25,6 +25,7 @@ arrBoutonsFiltres.forEach((item) =>
         filtrerGalerie();
     }));
 
+document.getElementById('btnReset').addEventListener('click', reinitialiserFiltres);
 
 //*******************
 // Déclaration d'objet(s)
@@ -169,4 +170,14 @@ function filtrerGalerie() {
             item.classList.add('display-none');
         }
     });
+}
+
+function reinitialiserFiltres() {
+    const refBoutonFiltres = document.querySelectorAll('.filtre__containeur input:checked');
+
+    refBoutonFiltres.forEach((item) => {
+        item.checked = false;
+    })
+
+    filtrerGalerie();
 }
