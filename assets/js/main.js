@@ -11,9 +11,17 @@ window.addEventListener('load', function () {
 });
 
 //*******************
+// Écouteurs d'événements
+//*******************
+const arrIdsPersonnagesAPiger = new Array("e0001", "e0008", "e0015", "e0019");
+const arrIdsObjetsAPiger = new Array("e0002", "e0004", "e0007", "e0021");
+const arrIdsLieuxAPiger = new Array("e0005", "e0012", "e0016", "e0022");
+
+//*******************
 // Déclaration d'objet(s)
 //*******************
 
+// JAVASCRIPT pour la Navigation Principale
 let menu = {
     javascriptEnabled: document.documentElement.classList.add('js'),
     tagButton: null,
@@ -136,5 +144,13 @@ let menu = {
         this.tagButton.focus();
     },
 };
+// Fin Javascript Navigation Princiaple
 
-/* JS DU FILTRE */
+// JS DU FILTRE dans galerie des personnages
+
+console.log(document.querySelectorAll('.galerie-container .carte'));
+// if (monElement.classList.contains('classe-a-verifier'))
+
+function filtrerGalerie() {
+
+}
