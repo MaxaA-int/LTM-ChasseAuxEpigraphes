@@ -157,20 +157,16 @@ let menu = {
 
 // JS DU FILTRE dans galerie des personnages
 
-// if (monElement.classList.contains('classe-a-verifier'))
-
 function filtrerGalerie() {
     const arrCartesPersonnages = document.querySelectorAll('.galerie-container .carte');
-    const refFiltreIndiceCoche = document.querySelector('.filtre__containeur .liste-filtre-indice input:checked');
-    const refFiltreSecteurCoche = document.querySelector('.filtre__containeur .liste-filtre-secteur input:checked');
+    const refFiltresCoches = [...document.querySelectorAll('.filtre__containeur input:checked')];
 
-    console.log(refFiltreIndiceCoche);
-    console.log(refFiltreSecteurCoche);
-
-    // arrCartesPersonnages.forEach((item) => {
-    //     if ()
-    //     if (item.classList.contains(`carte__${refFiltreIndiceCoche.value}`) && refFiltreSecteurCoche.value) {
-    //         console.log('élément : ' + item);
-    //     }
-    // });
+    arrCartesPersonnages.forEach((item) => {
+        if (refFiltresCoches.every(filtre => item.classList.contains(`carte__${filtre.value}`))) {
+            item.classList.remove('display-none');
+        }
+        else {
+            item.classList.add('display-none');
+        }
+    });
 }
