@@ -4,18 +4,27 @@
  */
 
 //*******************
+// Varibales Globales
+//*******************
+const arrIdsPersonnagesAPiger = new Array("e0001", "e0008", "e0015", "e0019");
+const arrIdsObjetsAPiger = new Array("e0002", "e0004", "e0007", "e0021");
+const arrIdsLieuxAPiger = new Array("e0005", "e0012", "e0016", "e0022");
+
+const arrBoutonsFiltres = document.querySelectorAll('.filtre__containeur input');
+
+
+//*******************
 // Écouteurs d'événements
 //*******************
 window.addEventListener('load', function () {
     menu.configurerNav();
 });
 
-//*******************
-// Écouteurs d'événements
-//*******************
-const arrIdsPersonnagesAPiger = new Array("e0001", "e0008", "e0015", "e0019");
-const arrIdsObjetsAPiger = new Array("e0002", "e0004", "e0007", "e0021");
-const arrIdsLieuxAPiger = new Array("e0005", "e0012", "e0016", "e0022");
+arrBoutonsFiltres.forEach((item) =>
+    item.addEventListener('click', function () {
+        filtrerGalerie();
+    }));
+
 
 //*******************
 // Déclaration d'objet(s)
@@ -148,9 +157,20 @@ let menu = {
 
 // JS DU FILTRE dans galerie des personnages
 
-console.log(document.querySelectorAll('.galerie-container .carte'));
 // if (monElement.classList.contains('classe-a-verifier'))
 
 function filtrerGalerie() {
+    const arrCartesPersonnages = document.querySelectorAll('.galerie-container .carte');
+    const refFiltreIndiceCoche = document.querySelector('.filtre__containeur .liste-filtre-indice input:checked');
+    const refFiltreSecteurCoche = document.querySelector('.filtre__containeur .liste-filtre-secteur input:checked');
 
+    console.log(refFiltreIndiceCoche);
+    console.log(refFiltreSecteurCoche);
+
+    // arrCartesPersonnages.forEach((item) => {
+    //     if ()
+    //     if (item.classList.contains(`carte__${refFiltreIndiceCoche.value}`) && refFiltreSecteurCoche.value) {
+    //         console.log('élément : ' + item);
+    //     }
+    // });
 }
