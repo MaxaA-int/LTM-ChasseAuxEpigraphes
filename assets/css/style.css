@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+/* Polices*/
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
+
 /* IMPORTATION DES AUTRES CSS */
 @import 'normalize.css'; /* Pour réinitialiser le chargement d'une page */
 @import 'navfooter.css'; /* Stylisation de la Navigation et du Footer */
@@ -53,6 +56,12 @@
 body {
     background-color: #1A1A1A;
     padding-block: 2rem;
+}
+
+h1 {
+    font-family: "Beau Rivage";
+    font-size: 4.5rem;
+    margin-block: 1rem;
 }
 
 .main {
