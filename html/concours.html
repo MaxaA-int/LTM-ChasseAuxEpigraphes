@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Concours | Chasse aux épigraphes </title>
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
-<body> 
+<body class="body__concours"> 
     <header class="en_tete--concours">
 
     
@@ -15,11 +16,11 @@
 
     </header>
 
-    <main class="">
-        <h2 class=""> Courez la chance de gagner un forfait pour deux à l’Auberge des Illustres voisins incluant : </h2>
+    <main class="main">
+        <h2 class="titre_lot"> Courez la chance de gagner un forfait pour deux à l’Auberge des Illustres voisins incluant : </h2>
 
-        <section class="cadeau1"> 
-            <h3 class="titre__cadeau"> Le souper à la carte </h3>
+        <section class="lot1"> 
+            <h3 class="titre__lot"> Le souper à la carte </h3>
                 <picture class="image_cadeau1">
                     <source media="(max-width: 360px)" src="/assets/images/salleManger_360px.jpg" alt="La salle à manger de l'auberge où le souper est offert">
                     <source media="(max-width: 600px)" src="/assets/images/salleManger_600px.jpg" alt="La salle à manger de l'auberge où le souper est offert">
@@ -28,8 +29,8 @@
                 </picture>
         </section>
 
-        <section class="cadeau2"> 
-            <h3 class="titre__cadeau"> La nuitée à l’Auberge </h3>
+        <section class="lot2"> 
+            <h3 class="titre__lot"> La nuitée à l’Auberge </h3>
                 <picture class="image_cadeau2">
                     <source media="(max-width: 360px)" src="/assets/images/chambre_360px.jpg" alt="La chambre où la nuitée est offerte">
                     <source media="(max-width: 600px)" src="/assets/images/chambre_600px.jpg" alt="La chambre où la nuitée est offerte">
@@ -38,8 +39,8 @@
                 </picture>
         </section>
 
-        <section class="cadeau3"> 
-            <h3 class="titre__cadeau"> Le petit-déjeuner à la carte </h3>
+        <section class="lot3"> 
+            <h3 class="titre__lot"> Le petit-déjeuner à la carte </h3>
                 <picture class="image_cadeau3">
                     <source media="(max-width: 360px)" src="/assets/images/Auberge_360px.jpg" alt="L'auberge où le petit-déjeuner à la carte est offert">
                     <source media="(max-width: 600px)" src="/assets/images/Auberge_600px.jpg" alt="L'auberge où le petit-déjeuner à la carte est offert">
@@ -47,43 +48,47 @@
                     <img src="/assets/images/Auberge_360px.jpg" alt="L'auberge où le petit-déjeuner à la carte est offert">
                 </picture>
         </section>
-    </main>
 
      <p> Pour participer, remplissez le formulaire ci-dessous.</p>
 
-     <form class="formualire__participation" action="">
-        <fieldset>
-            <legend> Formulaire de participation</legend>
+        <form class="formualire__participation" action="">
+            <fieldset>
+                <legend> Formulaire de participation</legend>
 
-            <label for="prenom"> Prénom </label>
-            <input type="text" id="prenom" name="prenom" required>
+                <label for="prenom"> Prénom </label>
+                <input type="text" id="prenom" name="prenom" required>
 
-            <label for="nom"> Nom </label>
-            <input type="text" id="nom" name="nom" required>
+                <label for="nom"> Nom </label>
+                <input type="text" id="nom" name="nom" required>
 
-            <label for="adresse"> Adresse </label>
-            <input type="" id="adresse" name="adresse" required>
+                <label for="adresse"> Adresse </label>
+                <input type="" id="adresse" name="adresse" required>
 
-            <label for="ville"> Ville </label>
-            <input type="text" id="ville" name="ville" required>
+                <label for="ville"> Ville </label>
+                <input type="text" id="ville" name="ville" required>
 
-            <label for="province"> Province  </label>
-            <input type="" id="province" name="province" required>
+                <label for="province"> Province  </label>
+                <input type="" id="province" name="province" required>
 
-            <label for="codepostal"> Code postal </label>
-            <input type="number" id="codepostal" name="codepostal" required>
+                <label for="codepostal"> Code postal </label>
+                <input type="number" id="codepostal" name="codepostal" required>
 
-            <label for="telephone"> Téléphone </label>
-            <input type="number" id="telephone" name="telephone" required>
+                <label for="telephone"> Téléphone </label>
+                <input type="number" id="telephone" name="telephone" required>
 
-            <label for="chasseauxepigraphesresolues"> Chasse aux épigraphes résolue </label>
+                <label for="chasseauxepigraphesresolues"> Chasse aux épigraphes résolue </label>
 
-            <h4 class="concours__formulaire--titre"> Le petit-déjeuner à la carte </h4>
-            <textarea name="message" rows="10" cols="50"> Exemple : Une militante d’origine française  a bu une bouteille de bière dans l’atelier du sculpteur</textarea>
+                <h4 class="concours__formulaire--titre"> Le petit-déjeuner à la carte </h4>
+                <textarea name="message" rows="10" cols="50"> Exemple : Une militante d’origine française  a bu une bouteille de bière dans l’atelier du sculpteur</textarea>
 
-            <input type="submit" value="Soumettre le formulaire">
-        </fieldset>
-     </form>
+                <input type="submit" value="Soumettre le formulaire">
+            </fieldset>
+        </form>
+     </main>
+
+     <footer>
+
+     </footer>
 
 </body>
 
