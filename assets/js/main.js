@@ -10,7 +10,7 @@ const arrIdsPersonnagesAPiger = new Array("e0001", "e0008", "e0015", "e0019");
 const arrIdsObjetsAPiger = new Array("e0002", "e0004", "e0007", "e0021");
 const arrIdsLieuxAPiger = new Array("e0005", "e0012", "e0016", "e0022");
 
-const arrBoutonsFiltres = document.querySelectorAll('.filtre__containeur input');
+
 
 
 //*******************
@@ -19,13 +19,6 @@ const arrBoutonsFiltres = document.querySelectorAll('.filtre__containeur input')
 window.addEventListener('load', function () {
     menu.configurerNav();
 });
-
-arrBoutonsFiltres.forEach((item) =>
-    item.addEventListener('click', function () {
-        filtrerGalerie();
-    }));
-
-document.getElementById('btnReset').addEventListener('click', reinitialiserFiltres);
 
 //*******************
 // Déclaration d'objet(s)
@@ -155,29 +148,3 @@ let menu = {
     },
 };
 // Fin Javascript Navigation Princiaple
-
-// JS DU FILTRE dans galerie des personnages
-
-function filtrerGalerie() {
-    const arrCartesPersonnages = document.querySelectorAll('.galerie-container .carte');
-    const refFiltresCoches = [...document.querySelectorAll('.filtre__containeur input:checked')];
-
-    arrCartesPersonnages.forEach((item) => {
-        if (refFiltresCoches.every(filtre => item.classList.contains(`carte__${filtre.value}`))) {
-            item.classList.remove('display-none');
-        }
-        else {
-            item.classList.add('display-none');
-        }
-    });
-}
-
-function reinitialiserFiltres() {
-    const refBoutonFiltres = document.querySelectorAll('.filtre__containeur input:checked');
-
-    refBoutonFiltres.forEach((item) => {
-        item.checked = false;
-    })
-
-    filtrerGalerie();
-}
