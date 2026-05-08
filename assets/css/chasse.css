@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+/* background-image: url('/assets/images/Lignes_fond.png');
+    background-repeat: repeat;
+    background-position: center; */
+
+.main__liste {
+    list-style-type: disc;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-block: 2rem;
+    padding-inline: 2rem;
+}
+
+.indices__liste {
+    display: inline-flex;
+    flex-direction: column;
+    border: 2px solid #C9A84C;
+    padding: 1rem;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.indices__liste__item {
+    width: auto;
+}
+
+.indices__liste img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.jouer__fleches {
+    padding-top: 4rem;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.piger__btn {
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 30rem) {
+    
+}
+
+@media (min-width: 60rem) {
+    .indices__liste {
+        flex-direction: row;
+    }
+}
