@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page fiche des personnages</title>
+    <link rel="stylesheet" href="../assets/css/fiches.css">
+    <script defer src="../assets/js/epigraphes.js"></script>
+    <script defer src="../assets/js/sports-et-spectacles.js"></script>
+</head>
+<body>
+    <noscript>
+        <p>Pour apprécier pleinement ce site, votre navigateur doit disposer de JavaScript, ce qui ne semble pas être le cas
+            présentement. Alternativement, vous pouvez consulter le site de la Ville de Québec pour découvrir les épigraphes
+            historiques :
+            <a href="https://www.ville.quebec.qc.ca/citoyens/patrimoine/personnalites/plaques-ici-vecut/index.aspx">ville.quebec.qc.ca/citoyens/patrimoine/personnalites/plaques-ici-vecut/</a>
+        </p>
+    </noscript>
+    <header>
+        <p class="titre">Chasse aux épigraphes</p>
+    </header>
+    <main>
+        <section>
+            <figure>
+                <img src="" alt="" id="url_image">
+                <figcaption>
+                    <span id="titre_image"></span> <br>
+                    ©<span id="credit_image"></span>
+                </figcaption>
+            </figure>
+            <div>
+                <h1><span id="prenom"></span><span id="nom"></span></h1>
+                <h2 class="section-1_notes">Notes biographiques</h2>
+                <div id="notes_biographiques">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <figure>
+                <img src="" alt="Plan de localisation" id="carteZoom">
+            </figure>
+            <div>
+                <h2>Localisation</h2>
+                <p>Arrondissement: <span id="arrondissement"></span></p>
+                <p>Quartier: <span id="quartier"></span></p>
+                <p>Adresse: <span id="adresse"></span></p>
+            </div>
+        </section>
+
+        <section>
+            <figure>
+                <img src="" alt="Plaque" id="url_plaque">
+            </figure>
+            <div>
+                <h2>Épigraphe</h2>
+                <p id="transcript"></p>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <h2>Capsule sonore</h2>
+                <p id="audio_desc"></p>
+                <p id="audio_preambule"></p>
+                <p id="audio_transcription"></p>
+                <p id="audio_credit"></p>
+            </div>
+            <div>
+                <audio controls id="audio_url">
+                    <source src="" type="audio/mpeg"/>
+                    Votre navigateur ne supporte pas la balise audio. Consultez la transcription textuelle qui suit.
+                </audio>
+            </div>
+        </section>
+    </main>
+    <aside role="complementary">
+        <!-- Si l’utilisateur n’a pas débuté une chasse -->
+        <div id="zoneAucuneChasseEnCours" hidden>
+            <h2>Soumettre cette fiche comme pièce à conviction</h2>
+            <p><span id="statusChasse">Aucune chasse en cours. Si vous désirez débuter une chasse, visitez la page <a
+                    href="chasseepigraphes.html">Chasse</a>.</span></p>
+        </div>
+
+        <!-- Si une chasse est en cours -->
+        <div id="zoneChasseEnCours">
+            <form class="formulaire">
+            <div class="conteneur-fiche">
+                <div class="contenu-fiche">
+                    <h2 class="titre-fiche">Soumettre cette fiche comme indice.<span id="progressionChasse">(0 indice trouvé sur 3)</span></h2>
+                    
+                    <p class="question-fiche">
+                        S'agit-il du personnage ? de l'objet ? ou du lieu évoqué dans la chasse ?
+                    </p>
+
+                    <div class="actions-fiche">
+                        <ul class="groupe-icones">
+                            <li>
+                                <input class="screen-reader-only" name="formChasse" id="personnage" type="radio" value="personnage" required>
+                                <label for="personnage"><img src="../assets/images/fiches/iconeFiltre_1_53.jpg" alt="personnage"></label>
+                            </li>
+                            <li>
+                                <input class="screen-reader-only" name="formChasse" id="objet" type="radio" value="objet">
+                                <label for="objet"><img src="../assets/images/fiches/iconeFiltre_2_53.jpg" alt="objet"></label>
+                            </li>
+                            <li>
+                                <input class="screen-reader-only" name="formChasse" id="lieu" type="radio" value="lieu">
+                                <label for="lieu"><img src="../assets/images/fiches/iconeFiltre_3_53.jpg" alt="lieu"></label>
+                            </li>
+                        </ul>
+                        <p id="message"></p>
+                        <button type="button" class="btnSoumettre" id="btnSoumettre">Soumettre l'indice</button>
+                    </div>
+
+                    <p class="texte-progression">
+                        <a href="chasseepigraphes.html" class="lien-progression">Aller à « Chasse aux épigraphes » pour vérifier votre progression.</a>
+                    </p>
+                    
+                    <a href="carte.html" class="lien-carte">Consulter la « Carte ».</a>
+                </div>
+            </div>
+        </form>
+    </aside>
+    
+</body>
+</html>
