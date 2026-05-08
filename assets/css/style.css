@@ -8,6 +8,7 @@
 @import 'navfooter.css'; /* Stylisation de la Navigation et du Footer */
 @import 'accueil.css'; /* Stylisation du body de l'Accueil (index.html) */
 @import 'galerie.css'; /* Stylisation du body de la page galeriedespersonnage.html */
+@import 'chasse.css'; /* Stylisation du body de la page chasseepigraphes.html */
 
 /* View Transition - Animation changement de page */
 
@@ -73,6 +74,7 @@ h1 {
     font-family: "Beau Rivage";
     font-size: 4.5rem;
     margin-block: 1rem;
+    color: var(--couleur-Jaune-Dore);
 }
 
 .main {
