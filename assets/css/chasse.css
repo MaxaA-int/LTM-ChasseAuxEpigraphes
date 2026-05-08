@@ -16,6 +16,7 @@
 
 .indices__liste {
     display: inline-flex;
+    gap: 1rem;
     flex-direction: column;
     border: 2px solid #C9A84C;
     padding: 1rem;

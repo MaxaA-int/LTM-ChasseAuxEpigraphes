@@ -1,21 +1,7 @@
+@charset "UTF-8";
+
 /* mobile */
-@media (max-width: 650px) {
-     body {
-        padding: 1rem; 
-    }
-
-    header {
-        margin-bottom: 2rem;
-    }
-
-    .titre {
-        font-size: 2rem; 
-    }
-
-    h1 {
-        font-size: 2.2rem;
-    }
-
+@media (max-width: 29rem) {
     section {
         flex-direction: column !important; 
         gap: 1.5rem;
@@ -32,28 +18,9 @@
         width: 100%;
     }
 
-    h2 {
-        font-size: 1.5rem;
+    section:last-child {
+        padding-bottom: 3rem;
     }
-}
-
-body {
-    background-color: #1b1b1b;
-    color: white;
-    max-width: 62.5rem;
-    margin: 0 auto;
-    padding: 1.25rem;
-}
-
-header {
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.titre {
-    color: #c5a059;
-    font-size: 3rem;
-    font-style: italic;
 }
 
 section {
@@ -71,21 +38,14 @@ section > div, section > figure {
     flex: 1; 
 }
 
-h1 {
-    font-size: 3rem;
-    text-align: center;
-    color: white;
-    margin-top: 0;
-}
-
 .section-1_notes {
     text-align: center;
 }
 
-h2 {
+/* h2 {
     color: #c5a059;
     margin-top: 0;
-}
+} */
 
 #url_image {
     width: 100%;
@@ -126,7 +86,7 @@ audio {
 /* -----formulaire------ */
 
 /* mobile */
-@media (max-width: 650px) {
+@media (max-width: 29rem) {
     .formulaire {
         height: auto;
         display: block; 
@@ -169,31 +129,6 @@ audio {
     align-items: center;
     height: 100vh;
     margin: 0;
-}
-
-/* Pour cacher visuellement tout en gardant accessible un contenu */
-.screen-reader-only,
-.visually-hidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 0.0625rem; 
-    margin: -0.0625rem; 
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 0.0625rem; 
-}
-
-.screen-reader-only.focusable:active,
-.screen-reader-only.focusable:focus,
-.visually-hidden.focusable:active,
-.visually-hidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
 }
 
 .conteneur-fiche {
