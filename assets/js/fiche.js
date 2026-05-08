@@ -38,14 +38,14 @@ function initialiser() {
         
     document.getElementById("notes_biographiques").innerHTML = "<p>" + refFiche.BIOGRAPHIE + "</p>";
     // a changer si chemin incorrect
-    const strChemin = "../images/fiches/";
+    const strChemin = "../assets/images/fiches/";
         
     document.getElementById("url_image").src = strChemin + refFiche.SUFFIXE_IMAGES + ".jpg";
     document.getElementById("url_image").alt = "Portrait de " + refFiche.PRENOM + " " + refFiche.NOM;
     document.getElementById("titre_image").innerHTML = refFiche.IMAGE.TITRE;
     document.getElementById("credit_image").innerHTML = refFiche.IMAGE.CREDIT;
 
-    document.getElementById("url_plaque").src = strChemin + "plaque_" + refFiche.SUFFIXE_IMAGES + ".jpg";
+    document.getElementById("url_plaque").src = `../assets/images/epigraphes/${refFiche.SUFFIXE_IMAGES}.svg`;
     document.getElementById("transcript").innerHTML = refFiche.PLAQUE_TRANSCRIPTION;
 
     document.getElementById("carteZoom").src = strChemin + "zoomgooglemap_" + refFiche.SUFFIXE_IMAGES + ".png";

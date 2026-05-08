@@ -9,6 +9,7 @@
 @import 'accueil.css'; /* Stylisation du body de l'Accueil (index.html) */
 @import 'galerie.css'; /* Stylisation du body de la page galeriedespersonnage.html */
 @import 'chasse.css'; /* Stylisation du body de la page chasseepigraphes.html */
+@import 'fiches.css'; /* Stylisation du body de la page fiches.html */
 
 /* View Transition - Animation changement de page */
 
