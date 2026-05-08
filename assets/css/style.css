@@ -1,8 +1,11 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 .contenu {
     display: flex;
     flex-direction: column;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #fff;
     background-color: #1A1A1A;
     background-image: url('/assets/images/Lignes_fond.png');
@@ -21,7 +24,9 @@
     margin-right: 5%;
 }
 .main_titre__chasse {
+    max-width: 100%;
     font-size: 2.5rem;
+    font-family: 'Beau Rivage', cursive;
     font-weight: bold;
     margin-bottom: 1rem;
     color: #C9A84C;
@@ -44,32 +49,33 @@
 
 .main_tableau_chasse {
     display: grid;
-    grid-template-areas: 
-    "item1 item2"
-    "item3 item3";
-    grid-template-columns: 1fr 1fr;
     gap: 0;
     border: 2px solid #C9A84C;
     margin-bottom: 1.5rem;
+    grid-template-areas:
+    "item1"
+    "item2"
+    "item3";
+    padding: 1rem;
 }
-.main_tableau_chasse__ligne-haut {
-    display: contents;
-}
-.main-tableau_chasse__ligne-bas {
-    display: contents;
-}
+
 .main_tableau_chasse_item1 {
-    grid-area: item1;}
+    grid-area: "item1";
+}
 .main_tableau_chasse_item2 {
-    grid-area: item2;}
+    grid-area: "item2";
+}
 .main_tableau_chasse_item3 {
-    grid-area: item3;}
-    .main_tableau_chasse_item1,
-    .main_tableau_chasse_item2,
+    grid-area: "item3";
+}
+
+    .main_tableau_chasse_item1{
+margin-bottom:1rem;    }
+    .main_tableau_chasse_item2 {
+margin-bottom:1rem;    }
     .main_tableau_chasse_item3 {
-        border: 1px solid #C9A84C;
-        overflow:hidden;
-    }
+margin-bottom:0;    
+}
     .main_tableau_chasse_item1 img,
     .main_tableau_chasse_item2 img,
     .main_tableau_chasse_item3 img {
@@ -78,6 +84,11 @@
         object-fit: cover;
         display: block;
     }
+    img:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+    
     .main_bouton_chasse {
         background-color: #C9A84C;
         color: #1A1A1A;
@@ -88,6 +99,10 @@
         cursor: pointer;
         margin-top: 1rem;
         transition: background-color 0.3s ease;
+        border-radius: 1rem;
+    }
+    .main_bouton_chasse:hover {
+        background-color: #B38E3A;
     }
     @media (max-width: 600px) {
         .main_tableau_chasse {
