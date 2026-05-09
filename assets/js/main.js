@@ -6,18 +6,13 @@
 //*******************
 // Varibales Globales
 //*******************
-const arrIdsPersonnagesAPiger = new Array("e0001", "e0008", "e0015", "e0019");
-const arrIdsObjetsAPiger = new Array("e0002", "e0004", "e0007", "e0021");
-const arrIdsLieuxAPiger = new Array("e0005", "e0012", "e0016", "e0022");
-
-
-
 
 //*******************
 // Écouteurs d'événements
 //*******************
 window.addEventListener('load', function () {
     menu.configurerNav();
+    ajusterCategoriesValidees();
 });
 
 //*******************
@@ -148,3 +143,17 @@ let menu = {
     },
 };
 // Fin Javascript Navigation Princiaple
+
+function ajusterCategoriesValidees() {
+    const arrCategoriesValidees = [];
+    
+    for (let i = 0; i < localStorage.length; i++) {
+        const strNomCle = localStorage.key(i);
+
+        if (strNomCle.includes("est_trouve") && localStorage.getItem(strNomCle) === 'true') {
+                arrCategoriesValidees.push(strNomCle);
+        }
+    }
+
+    localStorage.categories_validees = arrCategoriesValidees.length;
+}

@@ -14,6 +14,11 @@
     padding-inline: 2rem;
 }
 
+.chasse__instructions {
+    border-bottom: 2px var(--couleur-Jaune-Dore) solid;
+    padding-bottom: 2rem;
+}
+
 .indices__liste {
     display: inline-flex;
     gap: 1rem;
@@ -22,6 +27,7 @@
     padding: 1rem;
     justify-content: space-between;
     list-style-type: none;
+    margin-block: 2rem;
 }
 
 .indices__liste__item {
@@ -33,6 +39,15 @@
     transition: transform 0.3s ease;
 }
 
+.indices__liste .indices__liste__item img {
+    width: 300px;
+    height: auto;
+}
+
+.indices__liste .indices__liste__item .image__floutee {
+    filter: blur(20px) grayscale(100%);
+}
+
 .jouer__fleches {
     padding-top: 4rem;
     display: flex;
@@ -40,9 +55,13 @@
     gap: 5rem;
 }
 
-.piger__btn {
+.chasse__btn {
     display: flex;
     justify-content: center;
+}
+
+.chasse__btn button {
+    margin: 1rem;
 }
 
 @media (min-width: 30rem) {

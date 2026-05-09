@@ -78,6 +78,10 @@ h1 {
     color: var(--couleur-Jaune-Dore);
 }
 
+h2, h3 {
+    color: var(--couleur-Jaune-Dore);
+}
+
 .main {
     max-width: 100%;
 }
@@ -146,4 +150,8 @@ button:disabled {
 
 button:disabled a {
     color: --couleur-Gris-Pale;
+}
+
+.couleur__doree {
+    color: var(--couleur-Jaune-Dore);
 }
