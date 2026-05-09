@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../assets/css/style.css">
-    <script src="js/script.js" defer></script>
+    <script src="../assets/js/main.js" defer></script>
+    <script src="../assets/js/chasse.js" defer></script>
+    <script src="../assets/js/epigraphes.js" defer></script>
 
     <title>Chasse aux épigraphes</title>
 </head>
@@ -51,22 +53,75 @@
                 <li class="chasse_instructions__item">Complétez la chasse et participez au concours.</li>
             </ul>
 
-            <ul class="main__tableau__chasse indices__liste">
-                <li class="indices__liste__item"><img src="https://placehold.co/300x200" alt="Image de l'indice du peronnage"></li>
-                <li class="indices__liste__item"><img src="https://placehold.co/300x200" alt="Image de l'indice de l'objet"></li>
-                <li class="indices__liste__item"><img src="https://placehold.co/300x200" alt="Image de l'indice du lieu"></li>
-            </ul>
+            <p class="etat-chasse couleur__doree" id="messageEtatChasse">Aucune chasse en cours</p>
 
-            <div class="jouer__fleches">
-                <img src="../assets/images/elements_graphiques/fleche4.svg" alt="" class="jouer__fleche fleche4" aria-hidden="true">
-                <img src="../assets/images/elements_graphiques/fleche3.svg" alt="" class="jouer__fleche fleche3" aria-hidden="true">
+            <div id="zoneChasseEnCours" hidden>
+
+                <p>
+                    <span id="segmentPersonnage"></span>
+                    <span id="segmentObjet"> </span>
+                    <span id="segmentLieu"> </span>
+                </p>
+
+                <ul class="main__tableau__chasse indices__liste">
+
+                    <li class="indices__liste__item">
+                        <h3>Personne <span id="personnageMessageTrouve" hidden>(trouvé)</span></h3>
+                        <p id="personnageIndice" class="personnage">?</p>
+                        <img src="https://placehold.co/300x200" alt="Image de l'indice du peronnage" id="image__personnage" class="image__floutee">
+                    </li>
+
+                    <li class="indices__liste__item">
+                        <h3>Objet <span id="objetMessageTrouve" hidden>(trouvé)</span></h3>
+                        <p id="objetIndice" class="objet">?</p>
+                        <img src="https://placehold.co/300x200" alt="Image de l'indice de l'objet" id="image__objet" class="image__floutee">
+                    </li>
+
+                    <li class="indices__liste__item">
+                        <h3>Lieu <span id="lieuMessageTrouve" hidden>(trouvé)</span></h3>
+                        <p id="lieuIndice" class="lieu">?</p>
+                        <img src="https://placehold.co/300x200" alt="Image de l'indice du lieu" id="image__lieu" class="image__floutee">
+                    </li>
+
+                </ul>
+
+                <div id="zoneLiensChasse">
+                    <p>
+                        <a id="lienChercherIndices" href="carte.html" class="lien">Chercher des indices</a>
+                    </p>
+                </div>
+
             </div>
 
-            <p class="piger__btn">
-                <button name="btnPiger" id="btnPiger" value="Piger une chasse" title="Bouton pour piger une chasse">
-                    <label for="btnPiger">Piger une chasse</label>
-                </button>
-            </p>
+            <div class="chasse__boutons__containeur">
+
+                <!-- <div class="jouer__fleches">
+                    <img src="../assets/images/elements_graphiques/fleche4.svg" alt="" class="jouer__fleche fleche4" aria-hidden="true">
+                    <img src="../assets/images/elements_graphiques/fleche3.svg" alt="" class="jouer__fleche fleche3" aria-hidden="true">
+                </div> -->
+
+                <p class="demarrer-chasse__btn chasse__btn">
+                    <button type="button" id="btnDemarrerNouvelleChasse" disabled>Voulez-vous démarrer une nouvelle chasse?</button>
+                </p>
+
+                <p class="piger__btn chasse__btn">
+                    <button name="btnPiger" id="btnDebuterChasse" value="Piger une chasse" title="Bouton pour piger une chasse">
+                        <label for="btnPiger">Piger une chasse</label>
+                    </button>
+                </p>
+
+            </div>
+
+            <div id="zoneMessageChasseCompletee" hidden>
+                <h2 id="messageChasseCompletee">Bravo! Votre avez complété la chasse!</h2>
+
+                <p class="chasse__btn">
+                    <button type="button" id="btnConcours">
+                        <a href="../index.html">Participer au concours</a>
+                    </button>
+                </p>
+                
+            </div>
 
         </div>
     </main>

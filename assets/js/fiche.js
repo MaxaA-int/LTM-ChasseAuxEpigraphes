@@ -115,4 +115,7 @@ function validerPieceConviction() {
         refMessage.innerHTML = "Désolé. Ce n’est pas le bon élément.";
     }
 
+    ajusterCategoriesValidees();
+    document.getElementById('progressionChasse').textContent = localStorage.getItem('categories_validees');
+
 }
