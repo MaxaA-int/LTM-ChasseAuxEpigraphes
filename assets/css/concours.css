@@ -1,1 +1,140 @@
 @charset "UTF-8";
+
+
+/* Body */
+
+.body__concours {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    color: white;
+    padding-block: 4rem;
+}
+
+/* Main */
+
+.description_cours {
+color: white;
+text-align: center;
+margin-bottom: 1rem;
+}
+
+.concours__fleche{
+  display: block;
+  margin: 0.5rem auto;
+  width: 40px;
+}
+
+.titre__lot {
+    color: var(--couleur-Jaune-Dore);
+    text-align: center;
+    margin-bottom: 0.75rem;
+}
+
+.concours__image {
+    width: 100%;
+    border-radius: 0.5rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.concours__flecheor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: -1rem;
+    color: var(--couleur-Jaune-Dore);
+}
+
+/* Formulaire */
+
+.formualire__participation {
+  margin-block: 1.5rem;
+}
+
+fieldset {
+  border: 2px solid var(--couleur-Jaune-Dore);
+  border-radius: 1rem;
+  padding: 1.5rem 1rem;
+}
+
+legend {
+  font-size: 1rem;
+  font-style: bold;
+  background-color: var(--couleur-Jaune-Dore);
+  padding: 0.4rem 1.2rem;
+  border-radius: 0.5rem;
+}
+
+.formulaire__noms,
+.formulaire_adresse,
+.formulaire_telephone,
+.zone__texte,
+.formulaire_regle {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.formulaire__noms {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+label {
+  color: var(--couleur-Jaune-Dore);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.codepostal__exemple,
+.telephone__exemple {
+   font-size: 0.70rem;
+   color: var(--couleur-Jaune-Dore);
+}
+
+.formulaire_regle {
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+}
+
+/* Règlements */
+
+.reglement {
+  margin-block: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px var(--couleur-Jaune-Fonce); 
+  text-align: center;
+}
+
+
+@media (min-width: 30rem) {
+ 
+    .formulaire__noms {
+        grid-template-columns: 1fr 1fr;
+    }
+ 
+    .concours__fieldset {
+        padding: 2rem 1.5rem;
+    }
+}
+
+@media (min-width: 60rem) {
+ 
+    .concoursimage {
+        max-width: 800px;
+    }
+ 
+    .concourslot-titre {
+        font-size: 1.2rem;
+    }
+ 
+    .concours__fieldset {
+        padding: 2rem 2.5rem;
+    }
+}

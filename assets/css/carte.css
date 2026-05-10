@@ -57,17 +57,6 @@
 
 /* Carte */
 
-/* Concours */
-
-.body__concours {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: stretch;
-  justify-items: center;
-  margin: 0;
-}
-
 
 
 
