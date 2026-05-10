@@ -89,6 +89,9 @@ p {
 
 .main {
     max-width: 100%;
+    background-image: url('../images/elements_graphiques/Lignes_fond.png');
+    background-repeat: repeat;
+    background-position: center;
 }
 
 .main .main__containeur {
