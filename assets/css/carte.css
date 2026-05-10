@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+#carte {
+    min-height: 400px;
+}
+
+#repere {
+    cursor: pointer;
+}
