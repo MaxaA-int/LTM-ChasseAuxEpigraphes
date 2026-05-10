@@ -1,9 +1,5 @@
 @charset "UTF-8";
 
-/* background-image: url('/assets/images/Lignes_fond.png');
-    background-repeat: repeat;
-    background-position: center; */
-
 .main__liste {
     list-style-type: disc;
     text-align: left;
