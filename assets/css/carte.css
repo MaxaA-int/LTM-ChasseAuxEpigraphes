@@ -1,62 +1,9 @@
 @charset "UTF-8";
 
+#carte {
+    min-height: 400px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Carte */
-
-
-
-
+#repere {
+    cursor: pointer;
+}
