@@ -5,19 +5,19 @@
  */
 
 const arrBoutonsFiltres = document.querySelectorAll('.filtre__containeur input');
+document.getElementById('btnReset').addEventListener('click', reinitialiserFiltres);
 
 arrBoutonsFiltres.forEach((item) =>
     item.addEventListener('click', function () {
         filtrerGalerie();
     }));
 
-document.getElementById('btnReset').addEventListener('click', reinitialiserFiltres);
 
 /**
  * Filtre la galerie selon les éléments sélectionnés
  */
 function filtrerGalerie() {
-    const arrCartesPersonnages = document.querySelectorAll('.galerie-container .carte');
+    const arrCartesPersonnages = document.querySelectorAll('.galerie__container .carte');
     const refFiltresCoches = [...document.querySelectorAll('.filtre__containeur input:checked')];
 
     arrCartesPersonnages.forEach((item) => {
@@ -45,12 +45,6 @@ function reinitialiserFiltres() {
 
 /* Javascript pour View-transition */
 
-document.querySelectorAll('.galerie__container .carte').forEach(carte => {
-    carte.addEventListener('click', (item) => {
-        const refImageGalerie = item.currentTarget.querySelector('img');
-        refImageGalerie.setAttribute('id', 'vt__image');
-    });
-
-    
-});
-// document.querySelector('.carte__' + localStorage.getItem('fiche_active_id')).setAttribute('id', 'vt__image');
+document.querySelectorAll('.galerie__container .carte img').forEach((item) => {
+    item.style.viewTransitionName = item.id;
+})

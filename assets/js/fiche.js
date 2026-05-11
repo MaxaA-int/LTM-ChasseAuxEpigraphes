@@ -5,11 +5,13 @@
 //*************************
 // Écouteurs d'événements 
 //*************************
-window.addEventListener("load", initialiser);
+window.addEventListener("load", () => {
+    initialiser();
+    document.getElementById('progressionChasse').textContent = localStorage.getItem('categories_validees');
+});
 document.getElementById("btnSoumettre").addEventListener("click", validerPieceConviction);
 
 const intIdFicheCourante = obtenirValeurUrlParam('id');
-localStorage.fiche_active_id = intIdFicheCourante;
 //*************************
 // Fonctions 
 //*************************
@@ -38,8 +40,10 @@ function initialiser() {
     // a changer si chemin incorrect
     const strChemin = "../assets/images/fiches/";
         
-    document.getElementById("url_image").src = strChemin + refFiche.SUFFIXE_IMAGES + ".jpg";
-    document.getElementById("url_image").alt = "Portrait de " + refFiche.PRENOM + " " + refFiche.NOM;
+    document.querySelector(".main img").src = strChemin + refFiche.SUFFIXE_IMAGES + ".jpg";
+    document.querySelector(".main img").alt = "Portrait de " + refFiche.PRENOM + " " + refFiche.NOM;
+    document.querySelector(".main img").style.viewTransitionName = `carte-${intIdFicheCourante}`;
+
     document.getElementById("titre_image").innerHTML = refFiche.IMAGE.TITRE;
     document.getElementById("credit_image").innerHTML = refFiche.IMAGE.CREDIT;
 
@@ -65,7 +69,7 @@ function validerPieceConviction() {
     const intIdFicheCourante = obtenirValeurUrlParam('id');
 
     // vérifier si chasse est commencée
-    if (!localStorage.id_personnage) {
+    if (localStorage.chasse_en_cours == 'false') {
         refMessage.innerHTML = "Aucune chasse en cours. Si vous désirez débuter une chasse, visitez la page «Chasse».";
         // empêche l'execution de la fonction
         return;
@@ -113,5 +117,4 @@ function validerPieceConviction() {
     }
 
     ajusterCategoriesValidees();
-    document.getElementById('progressionChasse').textContent = localStorage.getItem('categories_validees');
 }
