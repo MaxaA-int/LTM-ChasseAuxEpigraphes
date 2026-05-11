@@ -12,15 +12,42 @@
 @import 'fiches.css'; /* Stylisation du body de la page fiches.html */
 @import 'carte.css'; /* Stylisation du body de la page carte.html */
 
-/* View Transition - Animation changement de page */
+/* View Transition - Animation changement de page
+ - CSS Avancé Maxime Rivein */
 
 @view-transition {
     navigation: auto;
 }
 
 ::view-transition(*) {
-    animation-duration: 0.5;
+    animation-duration: 1s;
 }
+
+/* #vt__image, #url__image {
+    view-transition-name: poster;
+}
+
+::view-transition-old(poster),
+::view-transition-new(poster) {
+    mix-blend-mode: normal;
+    animation: none;
+
+    height: 100%;
+    overflow: clip;
+    border-radius: 1rem;
+}
+
+#to::view-transition-new(poster) {
+    object-fit: cover;
+}
+
+#from::view-transition-new(poster) {
+    object-fit: contain;
+}
+
+#from::view-transition-old(poster) {
+    object-fit: cover;
+} */
 
 
 * {
