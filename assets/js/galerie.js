@@ -42,3 +42,15 @@ function reinitialiserFiltres() {
 
     filtrerGalerie();
 }
+
+/* Javascript pour View-transition */
+
+document.querySelectorAll('.galerie__container .carte').forEach(carte => {
+    carte.addEventListener('click', (item) => {
+        const refImageGalerie = item.currentTarget.querySelector('img');
+        refImageGalerie.setAttribute('id', 'vt__image');
+    });
+
+    
+});
+// document.querySelector('.carte__' + localStorage.getItem('fiche_active_id')).setAttribute('id', 'vt__image');

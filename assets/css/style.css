@@ -23,7 +23,7 @@
     animation-duration: 1s;
 }
 
-/* #vt__image, #url__image {
+#vt__image, #url_image {
     view-transition-name: poster;
 }
 
@@ -47,7 +47,7 @@
 
 #from::view-transition-old(poster) {
     object-fit: cover;
-} */
+}
 
 
 * {

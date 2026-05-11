@@ -8,6 +8,8 @@
 window.addEventListener("load", initialiser);
 document.getElementById("btnSoumettre").addEventListener("click", validerPieceConviction);
 
+const intIdFicheCourante = obtenirValeurUrlParam('id');
+localStorage.fiche_active_id = intIdFicheCourante;
 //*************************
 // Fonctions 
 //*************************
@@ -24,10 +26,6 @@ function obtenirValeurUrlParam(strParam) {
 }
 
 function initialiser() {
-    let intIdFicheCourante = obtenirValeurUrlParam('id');
-    
-    console.log("ID de la fiche courante :", intIdFicheCourante);
-
     const refFiche = objJSONepigraphes[intIdFicheCourante];
         
     document.getElementById("prenom").innerHTML = refFiche.PRENOM + " ";
@@ -59,7 +57,6 @@ function initialiser() {
     document.getElementById("audio_credit").innerHTML = refFiche.AUDIO.CREDIT;
         
     document.getElementById("audio_url").load();
-    localStorage.setItem(intIdFicheCourante, "true");
 }
 
 function validerPieceConviction() {
@@ -117,5 +114,4 @@ function validerPieceConviction() {
 
     ajusterCategoriesValidees();
     document.getElementById('progressionChasse').textContent = localStorage.getItem('categories_validees');
-
 }
