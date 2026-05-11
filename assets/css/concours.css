@@ -28,54 +28,128 @@ border-radius: 0.2rem;
   padding-block: 2.5rem;
 }
 
-.formualire__participation {
+/* Formulaire */
 
+.formulaire__participation {
+  background-color: #d9d9d9;
   padding: 1rem;
   border-radius: 1rem;
   border: 2px solid var(--couleur-Jaune-Dore);
+  margin-block: 1.5rem;
 }
 
-.formualire__participation legend {
+.formulaire__participation legend {
   background-color: black;
   padding: 1rem;
   border-radius: 1rem;
   color: var(--couleur-Jaune-Dore);
   font-size: 1.5rem;
+  font-weight: bold
 }
 
-.formualire__participation input, 
-.formualire__participation select,
-.formualire__participation textarea {
+.formulaire__participation input, 
+.formulaire__participation select,
+.formulaire__participation textarea {
   background-color: white;
   border-radius: 0.5rem;
   border: 2px solid var(--couleur-Jaune-Dore);
   padding: 0.3rem; 
+  width: 70%;
 }
+
+/* Formulaire - Nom - Prénom */
 
 .formulaire__noms {
   width: 100%;
-  display: flex;
+  margin: 2rem;
   justify-content: space-between;
   flex-direction: row;
+  color: black;
+  font-weight: bold;
 }
 
 .formulaire__nom, 
 .formulaire__prenom {
   display: flex;
+  padding: 0.5rem;
+  flex-direction: column;
+  align-items: flex-start ;
+}
+
+/* Formulaire - informations */
+
+.formulaire_adresses {
+  width: 100%;
+  margin: 2rem;
+  justify-content: space-between;
+  flex-direction: row;
+  color: black;
+  font-weight: bold;
+}
+
+.formulaire__adresse,
+.formulaire_ville,
+.formulaire_province,
+.formulaire_code--postal{
+  display: flex;
+  padding: 0.5rem;
   flex-direction: column;
   align-items: flex-start ;
 }
 
 .codepostal__exemple,
 .telephone__exemple {
-   font-size: 0.70rem;
+   font-size: 1rem;
+   font-weight: bold;
    color: var(--couleur-Jaune-Dore);
 }
 
-.formulaire_regle {
+.formulaire_telephone {
+  width: 100%;
+  margin: 2rem;
+  justify-content: space-between;
   flex-direction: row;
-  margin: 0.5rem 0;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  padding: 0.5rem;
+  flex-direction: column;
+  align-items: flex-start
 }
+
+/* Formulaire - Épigraphes*/
+
+.zone__texte {
+  width: 100%;
+  margin: 2rem;
+  justify-content: space-between;
+  flex-direction: row;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  padding: 0.5rem;
+  flex-direction: column;
+  align-items: flex-start
+}
+
+/* Formulaire - Règles */
+
+.formulaire_regle {
+  margin: 1rem;
+  justify-content: space-between;
+  flex-direction: row;
+  color: black;
+  font-weight: bold;
+  padding: 0.5rem;
+  flex-direction: column;
+  align-items: flex-start
+}
+
+.formulaire_regle input {
+ width: auto;
+}
+
+/* Formulaire - Soumission */
 
 .formulaire__soumettre button {
   display: inline;
@@ -83,4 +157,24 @@ border-radius: 0.2rem;
 
 .formulaire__soumettre {
   text-align: center; 
+}
+
+/* Règlements */
+
+ section.reglement {
+  margin-block: 2rem;
+  text-align: center;
+}
+
+section.reglement__titre {
+  margin-bottom: 0.5rem;
+  color: var(--couleur-Jaune-Dore);
+  text-align: left;
+}
+
+.reglement__texte {
+  font-size: 1rem;
+  color: white;
+  margin: auto;
+
 }
