@@ -176,5 +176,18 @@ section.reglement__titre {
   font-size: 1rem;
   color: white;
   margin: auto;
+}
 
+@media (min-width : 30rem){
+  .formulaire__noms {
+  flex-direction: row;
+  justify-content: space-between;
+  }
+}
+
+@media (min-width : 60rem){
+  .main__conteneur--concours section img {
+  display: block;
+  margin: 0 auto;
+  }
 }
