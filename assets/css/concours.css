@@ -1,5 +1,25 @@
 @charset "UTF-8";
 
+ /* View-Transition */
+
+ @view-transition {
+  navigation : auto;
+ }
+
+ /* page qu on quitte */
+ /* récuperation  une "image" de la page qu'on quitte et lui injecte une animation */
+
+ header::view-transition-old {
+  animation: 0.3s ease-in both concours-sortie;
+ }
+
+ /* page ou on rentre */
+ /* zoom sur l'image récupérer et injection d animation */
+ header::view-transition-new {
+  animation: 0.3s ease-out both concours-entree;
+ }
+
+
 
 /* Body */
 
