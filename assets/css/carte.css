@@ -11,3 +11,11 @@
 .main__texte {
     color: white;
 }
+
+@media (min-width: 30rem) {
+    
+}
+
+@media (min-width: 60rem) {
+
+}
