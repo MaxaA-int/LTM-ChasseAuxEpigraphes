@@ -51,7 +51,7 @@ const objChasse = {
   },
   debuterChasse: function () {
     console.log("chasse debutée");
-    let refBtnDebuterChasse = document.getElementById("btnDebuterChasse");
+    let refBtnDebuterChasse = document.getElementById("main_bouton_chasse");
     refBtnDebuterChasse.disabled = true;
     let refBtnDebuterNouvelleChasse = document.getElementById(
       "btnDebuterNouvelleChasse",
@@ -73,7 +73,7 @@ const objChasse = {
 };
 window.addEventListener("load", function () {
   objChasse.initialiser();
-  let refBtnDebuterChasse = document.getElementById("btnDebuterChasse");
+  let refBtnDebuterChasse = document.getElementById("main_bouton_chasse");
     let refBtnDebuterNouvelleChasse = document.getElementById(
       "btnDebuterNouvelleChasse",
     );

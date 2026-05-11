@@ -33,7 +33,7 @@
 }
 
 .main_liste_chasse {
-    list-style-type: disc;
+     list-style-type: disc;
     text-align: left;
     max-width: 600px;
     width: 100%;
@@ -46,10 +46,17 @@
     margin-right: 50%;
     text-align: center;
 }
-
+.tableau_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   container-type: inline-size;
+    container-name: tableauChasse;
+    width: 100%;
+}
 .main_tableau_chasse {
     display: grid;
-    gap: 0;
+    width: 400px;
     border: 2px solid #C9A84C;
     margin-bottom: 1.5rem;
     grid-template-areas:
@@ -58,15 +65,27 @@
     "item3";
     padding: 1rem;
 }
+@container tableauChasse (min-width: 600px) {
+    .main_tableau_chasse {
+display: flex;
+width: 100%;
+flex-direction: row;
+justify-content: space-between;
+gap: 1rem;
+  }
+}
 
 .main_tableau_chasse_item1 {
     grid-area: "item1";
+    width: 100%;
 }
 .main_tableau_chasse_item2 {
     grid-area: "item2";
+    width: 100%;
 }
 .main_tableau_chasse_item3 {
     grid-area: "item3";
+    width: 100%;
 }
 
     .main_tableau_chasse_item1{
