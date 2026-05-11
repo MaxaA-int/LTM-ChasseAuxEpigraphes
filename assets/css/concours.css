@@ -3,94 +3,67 @@
 
 /* Body */
 
-.body__concours {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    justify-content: center;
-    color: white;
-    padding-block: 4rem;
-    align-items: center;
+.main__conteneur--concours h2 {
+  color: white;
 }
 
-/* Main */
-
-.description_cours {
-color: white;
-text-align: center;
-margin-bottom: 1rem;
-}
-
-.concours__fleche{
-  display: block;
-  margin: 0.5rem auto;
-  width: 40px;
-}
-
-.titre__lot {
-    color: var(--couleur-Jaune-Dore);
-    text-align: center;
-    margin-bottom: 0.75rem;
-}
-
-.image__cadeau {
-    width: 100%;
-    border-radius: 0.5rem;
-    color: var(--couleur-Jaune-Dore);
-    display: block;
-    margin: 0 auto;
-}
-
-.concours__flecheor {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-bottom: -1rem;
-    color: var(--couleur-Jaune-Dore);
-}
-
-/* Formulaire */
-
-.formualire__participation {
-  margin-block: 1.5rem;
-}
-
-fieldset {
-  border: 2px solid var(--couleur-Jaune-Dore);
-  border-radius: 1rem;
-  padding: 1.5rem 1rem;
-}
-
-legend {
-  font-size: 1rem;
-  font-style: bold;
-  background-color: var(--couleur-Jaune-Dore);
-  padding: 0.4rem 1.2rem;
-  border-radius: 0.5rem;
-}
-
-.formulaire__noms,
-.formulaire_adresse,
-.formulaire_telephone,
-.zone__texte,
-.formulaire_regle {
+section.lot {
   display: flex;
   flex-direction: column;
-  gap: 0.3rem;
-  margin-bottom: 1rem;
+  gap: 3rem;
+}
+
+section.lot h3 {
+outline: 3px solid var(--couleur-Jaune-Dore);
+outline-offset: 1rem;
+border-radius: 0.2rem;
+}
+
+.main__conteneur--concours section img {
+  width: 100%;
+  border: 5px solid var(--couleur-Jaune-Dore);
+}
+
+.main__conteneur--concours .instruction__fleche {
+  padding-block: 2.5rem;
+}
+
+.formualire__participation {
+
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 2px solid var(--couleur-Jaune-Dore);
+}
+
+.formualire__participation legend {
+  background-color: black;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: var(--couleur-Jaune-Dore);
+  font-size: 1.5rem;
+}
+
+.formualire__participation input, 
+.formualire__participation select,
+.formualire__participation textarea {
+  background-color: white;
+  border-radius: 0.5rem;
+  border: 2px solid var(--couleur-Jaune-Dore);
+  padding: 0.3rem; 
 }
 
 .formulaire__noms {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
-label {
-  color: var(--couleur-Jaune-Dore);
-  font-size: 0.9rem;
-  margin: 0;
+.formulaire__nom, 
+.formulaire__prenom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start ;
 }
 
 .codepostal__exemple,
@@ -101,42 +74,13 @@ label {
 
 .formulaire_regle {
   flex-direction: row;
-  align-items: center;
-  margin: 0;
+  margin: 0.5rem 0;
 }
 
-/* Règlements */
-
-.reglement {
-  margin-block: 2rem;
-  padding-top: 1.5rem;
-  border-top: 1px var(--couleur-Jaune-Fonce); 
-  text-align: center;
+.formulaire__soumettre button {
+  display: inline;
 }
 
-
-@media (min-width: 30rem) {
- 
-    .formulaire__noms {
-        grid-template-columns: 1fr 1fr;
-    }
- 
-    .concours__fieldset {
-        padding: 2rem 1.5rem;
-    }
-}
-
-@media (min-width: 60rem) {
- 
-    .concoursimage {
-        max-width: 800px;
-    }
- 
-    .concourslot-titre {
-        font-size: 1.2rem;
-    }
- 
-    .concours__fieldset {
-        padding: 2rem 2.5rem;
-    }
+.formulaire__soumettre {
+  text-align: center; 
 }

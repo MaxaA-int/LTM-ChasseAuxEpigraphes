@@ -8,7 +8,7 @@
     <script src="../assets/js/main.js" defer> </script>
 </head>
 
-<body class="body__concours"> 
+<body> 
     <header class="header">
 
             <nav class="nav flex" id="nav-principal" aria-label="Navigation Principale">
@@ -33,8 +33,8 @@
                 </ul>
             </div>
         </header>
-
-    <main class="en_tete--concours">
+<main class="main">
+    <div class="main__containeur main__conteneur--concours">
         <h1 class="titre__concours"> Concours </h1>
         <h2 class="description_concours"> Courez la chance de gagner un forfait pour deux à l’Auberge des Illustres voisins incluant : </h2>
 
@@ -42,7 +42,7 @@
             <img src="../assets/images/elements_graphiques/fleche1.svg" class="instruction__fleche fleche1">
         </div>
 
-        <section class="lot1"> 
+        <section class="lot1 lot"> 
             <h3 class="titre__lot"> Le souper à la carte </h3>
                 <picture class="image_cadeau">
                     <source media="(max-width: 360px)" srcset="../assets/images/concours/salleManger_360px.jpg" alt="La salle à manger de l'auberge où le souper est offert">
@@ -52,11 +52,11 @@
                 </picture>
         </section>
 
-        <div class="concours__flecheor">
+        <div class="concours__fleche--or">
             <img src="../assets/images/elements_graphiques/fleche2.svg" class="instruction__fleche fleche2">
         </div>
 
-        <section class="lot2"> 
+        <section class="lot2 lot"> 
             <h3 class="titre__lot"> La nuitée à l’Auberge </h3>
                 <picture class="image_cadeau">
                     <source media="(max-width: 360px)" srcset="../assets/images/concours/chambre_360px.jpg" alt="La chambre où la nuitée est offerte">
@@ -66,11 +66,11 @@
                 </picture>
         </section>
 
-        <div class="concours__flecheor">
+        <div class="concours__fleche--or">
             <img src="../assets/images/elements_graphiques/fleche1.svg" class="instruction__fleche fleche1">
         </div>
 
-        <section class="lot3"> 
+        <section class="lot3 lot"> 
             <h3 class="titre__lot"> Le petit-déjeuner à la carte </h3>
                 <picture class="image_cadeau">
                     <source media="(max-width: 360px)" srcset="../assets/images/concours/Auberge_360px.jpg" alt="L'auberge où le petit-déjeuner à la carte est offert">
@@ -80,9 +80,9 @@
                 </picture>
         </section>
 
-     <p> Pour participer, remplissez le formulaire ci-dessous.</p>
+     <h4> Pour participer, remplissez le formulaire ci-dessous.</h4>
 
-     <div class="concours__flecheor">
+     <div class="concours__fleche--or">
             <img src="../assets/images/elements_graphiques/fleche2.svg" alt="" class="instruction__fleche fleche2">
     </div>
 
@@ -90,17 +90,18 @@
             <fieldset>
                 <legend> Formulaire de participation</legend>
 
-                <div class="formulaire_noms">
-                    <label for="prenom"> Prénom </label>
-                    <input type="text" id="prenom" name="prenom" required>
+                <div class="formulaire__noms">
+                    <div class="formulaire__nom">
+                        <label for="prenom"> Prénom </label>
+                        <input type="text" id="prenom" name="prenom" required>
+                    </div>
+                    <div class="formulaire__prenom">
+                        <label for="nom"> Nom </label>
+                        <input type="text" id="nom" name="nom" required>
+                    </div>
                 </div>
 
-                <div class="formulaire_noms">
-                    <label for="nom"> Nom </label>
-                    <input type="text" id="nom" name="nom" required>
-                </div>
-
-                <div class="formulaire_adresse">
+                <div class="formulaire__adresse">
                     <label for="adresse"> Adresse </label>
                     <input type="" id="adresse" name="adresse" required>
                 </div>
@@ -113,7 +114,7 @@
                 <div class="formulaire_adresse">
                     <label for="province"> Province  </label>
                     <select class="province__iste" id="province" name="province" required>
-                        <option value=""> Province </option>
+                        <option value="">  </option>
                         <option value="AB"> Alberta </option>
                         <option value="BC"> Colombie-Britannique </option>
                         <option value="MB"> Manitoba </option>
