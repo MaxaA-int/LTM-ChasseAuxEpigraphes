@@ -10,6 +10,7 @@
     justify-content: center;
     color: white;
     padding-block: 4rem;
+    align-items: center;
 }
 
 /* Main */
@@ -32,9 +33,10 @@ margin-bottom: 1rem;
     margin-bottom: 0.75rem;
 }
 
-.concours__image {
+.image__cadeau {
     width: 100%;
     border-radius: 0.5rem;
+    color: var(--couleur-Jaune-Dore);
     display: block;
     margin: 0 auto;
 }
