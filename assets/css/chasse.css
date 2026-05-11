@@ -26,6 +26,15 @@
     margin-block: 2rem;
 }
 
+@container tableauChasse (min-width: 600px) {
+    .indices__liste {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+}
+
 .indices__liste__item {
     width: auto;
 }
