@@ -14,7 +14,7 @@ const objCarte = {
 	arrMarqueurs: [],
 	fltLatCentreCarte: 46.811638,
 	fltLngCentreCarte: -71.223758,
-	strUrlImages: '../images/',
+	strUrlImages: '../assets/images/',
 	intZoomCarte: 14,
 
 	/**
@@ -47,7 +47,7 @@ const objCarte = {
 			//à compléter en remplaçant toutes les valeurs fixes par celles du json de la fiche actuelle! :
 			const strGabaritContenuInfobulle =
 				`<div class="infobulle">
-				<div class="image"><img width="150" src="${this.strUrlImages}fiches/${strIdEpigraphe}.jpg"/></div>
+				<div class="image"><img width="150" src="${this.strUrlImages}fiches/${objEpigrapheCourant.SUFFIXE_IMAGES}.jpg"/></div>
 				<div class="titre">${objEpigrapheCourant.PRENOM} ${objEpigrapheCourant.NOM}</div>
 				<div class="adresse">Adresse : ${objEpigrapheCourant.ADRESSE}</div>
 				<a class="btn" href="fiche.html?id=${strIdEpigraphe}&titre=${objEpigrapheCourant.PRENOM}-${objEpigrapheCourant.NOM}">Consulter la fiche de ${objEpigrapheCourant.PRENOM} ${objEpigrapheCourant.NOM}</a>
@@ -59,7 +59,7 @@ const objCarte = {
 				content: strGabaritContenuInfobulle
 			});
 
-			const objMarqueur = new google.maps.Marker({
+			const objMarqueur = new google.maps.Marker ({
 				position: new google.maps.LatLng(objEpigrapheCourant.LATITUDE, objEpigrapheCourant.LONGITUDE),
 				title: objEpigrapheCourant.IMAGE.TITRE,
 				map: this.objMap,
@@ -91,7 +91,7 @@ const objCarte = {
 			strCouleur = "navy";
 		}
 
-		return `${this.strUrlImages}marqueurs/landmark-${strCouleur}.svg`;
+		return `${this.strUrlImages}icones/marqueurs/landmark-${strCouleur}.svg`;
 	},
 
 	/**
