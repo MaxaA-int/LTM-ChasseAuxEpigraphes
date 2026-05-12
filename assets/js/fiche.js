@@ -1,17 +1,18 @@
 /* Variables globales */
 
-
+const intIdFicheCourante = obtenirValeurUrlParam('id');
 
 //*************************
 // Écouteurs d'événements 
 //*************************
+
 window.addEventListener("load", () => {
     initialiser();
     document.getElementById('progressionChasse').textContent = localStorage.getItem('categories_validees');
+    localStorage.setItem(`fiche_${intIdFicheCourante}_est_visitee`, 'true');
 });
 document.getElementById("btnSoumettre").addEventListener("click", validerPieceConviction);
 
-const intIdFicheCourante = obtenirValeurUrlParam('id');
 //*************************
 // Fonctions 
 //*************************
@@ -27,6 +28,9 @@ function obtenirValeurUrlParam(strParam) {
     return new URLSearchParams(window.location.search).get(strParam);
 }
 
+/**
+ * Initialise les informations du personnage lors du chargment de la fiche
+ */
 function initialiser() {
     const refFiche = objJSONepigraphes[intIdFicheCourante];
         
@@ -63,6 +67,10 @@ function initialiser() {
     document.getElementById("audio_url").load();
 }
 
+/**
+ * Vérifie et répond lors de la soumission du formulare
+ * @returns - Termine la fonction
+ */
 function validerPieceConviction() {
     const refRadioCoche = document.querySelector('[name="formChasse"]:checked');
     const refMessage = document.getElementById('message');

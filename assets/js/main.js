@@ -144,6 +144,9 @@ let menu = {
 };
 // Fin Javascript Navigation Princiaple
 
+/**
+ * met à jour la variable local du nombre de bonnes réponses ( X / 3 )
+ */
 function ajusterCategoriesValidees() {
     const arrCategoriesValidees = [];
     

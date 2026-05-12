@@ -111,6 +111,9 @@ function mettreAJourChasse() {
     }
 }
 
+/**
+ * Affiche les images des personnages pigées + effet de flou
+ */
 function afficherImages() {
     document.querySelectorAll('.indices__liste__item img').forEach((item) => {
         item.classList.add('image__floutee');
