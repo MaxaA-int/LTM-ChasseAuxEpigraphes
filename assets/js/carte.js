@@ -50,7 +50,7 @@ const objCarte = {
 				<div class="image"><img width="150" src="${this.strUrlImages}fiches/${objEpigrapheCourant.SUFFIXE_IMAGES}.jpg"/></div>
 				<div class="titre">${objEpigrapheCourant.PRENOM} ${objEpigrapheCourant.NOM}</div>
 				<div class="adresse">Adresse : ${objEpigrapheCourant.ADRESSE}</div>
-				<a class="btn" href="fiche.html?id=${strIdEpigraphe}&titre=${objEpigrapheCourant.PRENOM}-${objEpigrapheCourant.NOM}">Consulter la fiche de ${objEpigrapheCourant.PRENOM} ${objEpigrapheCourant.NOM}</a>
+				<a class="btn" href="../html/fiches.html?id=${strIdEpigraphe}&titre=${objEpigrapheCourant.PRENOM}-${objEpigrapheCourant.NOM}">Consulter la fiche de ${objEpigrapheCourant.PRENOM} ${objEpigrapheCourant.NOM}</a>
 			</div>`;
 
 			console.log(strGabaritContenuInfobulle);
