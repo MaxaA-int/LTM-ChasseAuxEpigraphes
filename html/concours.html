@@ -4,86 +4,219 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Concours | Chasse aux épigraphes </title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/main.js" defer> </script>
 </head>
 
 <body> 
-    <header class="en_tete--concours">
+    <header class="header">
 
-    
+            <nav class="nav flex" id="nav-principal" aria-label="Navigation Principale">
 
-        <h1 class="titre__carte"> Concours </h1>
+            <div class="nav__logo">
+                <a href="../index.html" class="nav__lien logo" id="logo">
+                    <img class="nav__image" src="../assets/images/Logo_entete.png" alt="Logo La Chasse aux épigraphes">Accueil
+                </a>
+            </div>
 
-    </header>
+            <div class="nav__barre flex">
+                <ul class="nav__liste menu flex">
+                    <li class="menu__item">
+                        <a href="../html/chasseepigraphes.html" class="menu__lien lien">Chasse aux épigraphes</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="../html/galeriedespersonnage.html" class="menu__lien lien">Galerie des Personnages</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="../html/carte.html" class="menu__lien lien">Carte</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+<main class="main">
+    <div class="main__containeur main__conteneur--concours">
+        <h1 class="titre__concours"> Concours </h1>
+        <h2 class="description_concours"> Courez la chance de gagner un forfait pour deux à l’Auberge des Illustres voisins incluant : </h2>
 
-    <main class="">
-        <h2 class=""> Courez la chance de gagner un forfait pour deux à l’Auberge des Illustres voisins incluant : </h2>
+        <div class="concours__flecheor">
+            <img src="../assets/images/elements_graphiques/fleche1.svg" class="instruction__fleche fleche1">
+        </div>
 
-        <section class="cadeau1"> 
-            <h3 class="titre__cadeau"> Le souper à la carte </h3>
-                <picture class="image_cadeau1">
-                    <source media="(max-width: 360px)" src="/assets/images/salleManger_360px.jpg" alt="La salle à manger de l'auberge où le souper est offert">
-                    <source media="(max-width: 600px)" src="/assets/images/salleManger_600px.jpg" alt="La salle à manger de l'auberge où le souper est offert">
-                    <source media="(min-width: 1440px)" src="/assets/images/salleManger_1280px.jpg" alt="La salle à manger de l'auberge où le souper est offert">
-                    <img src="/assets/images/salleManger_360px.jpg" alt="La salle à manger de l'auberge où le souper est offert">
+        <section class="lot1 lot"> 
+            <h3 class="titre__lot"> Le souper à la carte </h3>
+                <picture class="image_cadeau">
+                    <source media="(max-width: 360px)" srcset="../assets/images/concours/salleManger_360px.jpg" alt="La salle à manger de l'auberge où le souper est offert">
+                    <source media="(max-width: 600px)" srcset="../assets/images/concours/salleManger_600px.jpg" alt="La salle à manger de l'auberge où le souper est offert">
+                    <source media="(min-width: 1440px)" srcset="../assets/images/concours/salleManger_1280px.jpg" alt="La salle à manger de l'auberge où le souper est offert">
+                    <img src="../assets/images/concours/salleManger_360px.jpg" alt="La salle à manger de l'auberge où le souper est offert">
                 </picture>
         </section>
 
-        <section class="cadeau2"> 
-            <h3 class="titre__cadeau"> La nuitée à l’Auberge </h3>
-                <picture class="image_cadeau2">
-                    <source media="(max-width: 360px)" src="/assets/images/chambre_360px.jpg" alt="La chambre où la nuitée est offerte">
-                    <source media="(max-width: 600px)" src="/assets/images/chambre_600px.jpg" alt="La chambre où la nuitée est offerte">
-                    <source media="(min-width: 1440px)" src="/assets/images/chambre_1440px.jpg" alt="La chambre où la nuitée est offerte">
-                    <img src="/assets/images/chambre_360px.jpg" alt="La chambre où la nuitée est offerte">
+        <div class="concours__fleche--or">
+            <img src="../assets/images/elements_graphiques/fleche2.svg" class="instruction__fleche fleche2">
+        </div>
+
+        <section class="lot2 lot"> 
+            <h3 class="titre__lot"> La nuitée à l’Auberge </h3>
+                <picture class="image_cadeau">
+                    <source media="(max-width: 360px)" srcset="../assets/images/concours/chambre_360px.jpg" alt="La chambre où la nuitée est offerte">
+                    <source media="(max-width: 600px)" srcset="../assets/images/concours/chambre_600px.jpg" alt="La chambre où la nuitée est offerte">
+                    <source media="(min-width: 1440px)" srcset="../assets/images/concours/chambre_1440px.jpg" alt="La chambre où la nuitée est offerte">
+                    <img src="../assets/images/concours/chambre_360px.jpg" alt="La chambre où la nuitée est offerte">
                 </picture>
         </section>
 
-        <section class="cadeau3"> 
-            <h3 class="titre__cadeau"> Le petit-déjeuner à la carte </h3>
-                <picture class="image_cadeau3">
-                    <source media="(max-width: 360px)" src="/assets/images/Auberge_360px.jpg" alt="L'auberge où le petit-déjeuner à la carte est offert">
-                    <source media="(max-width: 600px)" src="/assets/images/Auberge_600px.jpg" alt="L'auberge où le petit-déjeuner à la carte est offert">
-                    <source media="(min-width: 1440px)" src="/assets/images/Auberge_1440px.jpg" alt="L'auberge où le petit-déjeuner à la carte est offert">
-                    <img src="/assets/images/Auberge_360px.jpg" alt="L'auberge où le petit-déjeuner à la carte est offert">
+        <div class="concours__fleche--or">
+            <img src="../assets/images/elements_graphiques/fleche1.svg" class="instruction__fleche fleche1">
+        </div>
+
+        <section class="lot3 lot"> 
+            <h3 class="titre__lot"> Le petit-déjeuner à la carte </h3>
+                <picture class="image_cadeau">
+                    <source media="(max-width: 360px)" srcset="../assets/images/concours/Auberge_360px.jpg" alt="L'auberge où le petit-déjeuner à la carte est offert">
+                    <source media="(max-width: 600px)" srcset="../assets/images/concours/Auberge_600px.jpg" alt="L'auberge où le petit-déjeuner à la carte est offert">
+                    <source media="(min-width: 1440px)" srcset="../assets/images/concours/Auberge_1440px.jpg" alt="L'auberge où le petit-déjeuner à la carte est offert">
+                    <img src="../assets/images/concours/Auberge_360px.jpg" alt="L'auberge où le petit-déjeuner à la carte est offert">
                 </picture>
         </section>
-    </main>
 
-     <p> Pour participer, remplissez le formulaire ci-dessous.</p>
+     <h4> Pour participer, remplissez le formulaire ci-dessous.</h4>
 
-     <form class="formualire__participation">
-        <fieldset>
-            <legend> Formulaire de participation</legend>
+     <div class="concours__fleche--or">
+            <img src="../assets/images/elements_graphiques/fleche2.svg" alt="" class="instruction__fleche fleche2">
+    </div>
 
-            <label for="prenom"> Prénom </label>
-            <input type="text" id="prenom" name="prenom" required>
+        <form class="formulaire__participation" action="">
+            <fieldset>
+                <legend> Formulaire de participation</legend>
 
-            <label for="nom"> Nom </label>
-            <input type="text" id="nom" name="nom" required>
+                <div class="formulaire__noms">
+                    <div class="formulaire__nom">
+                        <label for="prenom"> Prénom </label>
+                        <input type="text" id="prenom" name="prenom" required>
+                    </div>
+                    <div class="formulaire__prenom">
+                        <label for="nom"> Nom </label>
+                        <input type="text" id="nom" name="nom" required>
+                    </div>
+                </div>
 
-            <label for="adresse"> Adresse </label>
-            <input type="" id="adresse" name="adresse" required>
+                <div class="formulaire_adresses">
+                    <div class="formulaire__adresse">
+                        <label for="adresse"> Adresse </label>
+                        <input type="" id="adresse" name="adresse" required>
+                    </div>
 
-            <label for="ville"> Ville </label>
-            <input type="text" id="ville" name="ville" required>
+                    <div class="formulaire_ville">
+                        <label for="ville"> Ville </label>
+                        <input type="text" id="ville" name="ville" required>
+                    </div>
 
-            <label for="province"> Ville </label>
-            <input type="" id="ville" name="ville" required>
+                    <div class="formulaire_province">
+                        <label for="province"> Province  </label>
+                        <select class="province__iste" id="province" name="province" required>
+                            <option value="">  </option>
+                            <option value="AB"> Alberta </option>
+                            <option value="BC"> Colombie-Britannique </option>
+                            <option value="MB"> Manitoba </option>
+                            <option value="NB"> Nouvesu-Brunswick </option>
+                            <option value="NL"> Terre-Neuve et Labrador </option>
+                            <option value="NS"> Nouvelle-Écosse </option>
+                            <option value="ON"> Ontario </option>
+                            <option value="PE"> Ile-du-Prince-Édouard </option>
+                            <option value="QC"> Québec </option>
+                            <option value="SK"> Saskatchewan </option>
+                        </select>
+                    </div>
 
-            <label for="codepostal"> Code postal </label>
-            <input type="number" id="codepostal" name="codepostal" required>
-
-            <label for="telephone"> Téléphone </label>
-            <input type="number" id="telephone" name="telephone" required>
-
-            <label for="chasseauxepigraphesresolues"> Chasse aux épigraphes résolue </label>
+                    <div class="formulaire_code--postal">
+                        <label for="codepostal"> Code postal <span class="codepostal__exemple"> (Exemple : G2A 1V1) </span></label>
+                        <input type="text" id="codepostal" name="codepostal" required>
+                    </div>
+                </div>
 
 
+                <div class="formulaire_telephone">
+                    <label for="telephone"> Téléphone <span class="telephone__exemple"> (Exemple : 5184562131) </span> </label>
+                    <input type="number" id="telephone" name="telephone" required>
+                </div>
 
+                <div class="zone__texte">
+                    <label for="chasseresolue"> Chasse aux épigraphes résolue </label>
+                    <textarea id="chasseresolue" name="chasseresolue" rows="10" cols="50"> Exemple : Une militante d’origine française  a bu une bouteille de bière dans l’atelier du sculpteur </textarea>
 
-        </fieldset>
+                <div class="formulaire_regle">
+                    <input type="checkbox" id="regles" required>
+                    <label for="regles"> J'ai lu et accepté les règlements du concours</label>
+                </div>
 
-     </form>
+                <div class="formulaire__soumettre">
+                    <button type="submit"> Soumettre le formulaire </button>
+                </div>
+            </fieldset>
+        </form>
+
+        <section class="reglement">
+            <h3 class="reglement__titre"> Règlement du concours </h3>
+            <p class="reglement__texte"> Ouvert aux résidents canadiens majeurs. Les participants sont admessibles du 9 janvier au 30 juin 2026. Une participation par personne, par jours. Le tirage aura lieu le 10 juin 2026.</p>
+        </section>
+     </main>
+
+     <footer class="footer">
+
+        <div class="footer__containeur flex">
+
+            <div class="footer__nav">
+                <ul class="footer__nav-liste footer__menu flex">
+
+                    <li class="footer__menu-item">
+                        <a href="index.html" class="footer__menu-lien lien">Accueil</a>
+                    </li>
+
+                    <li class="footer__menu-item">
+                        <a href="html/chasseepigraphes.html" class="footer__menu-lien lien">Chasse aux Épigraphes</a>
+                    </li>
+
+                    <li class="footer__menu-item">
+                        <a href="html/galeriedespersonnage.html" class="footer__menu-lien lien">Galerie des personnages</a>
+                    </li>
+
+                    <li class="footer__menu-item">
+                        <a href="html/carte.html" class="footer__menu-lien lien">Carte</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="footer__reseaux-sociaux flex">
+
+                <a href="" class="facebook">
+                    <img src="../assets/images/icones/facebook/initial.svg" alt="Icone Facebook" class="lien-facebook">
+                </a>
+
+                <a href="" class="instagram">
+                    <img src="../assets/images/icones/instagram/initial.svg" alt="Icone Instagram" class="lien-instagram">
+                </a>
+
+                <a href="" class="twitter">
+                    <img src="../assets/images/icones/twitter/initial.svg" alt="Icone X" class="lien-twitter">
+                </a>
+
+                <a href="" class="youtube">
+                    <img src="../assets/images/icones/youtube/initial.svg" alt="Icone youtube" class="lien-youtube">
+                </a>
+            </div>
+
+            <div class="footer__texte-containeur flex">
+                <p class="footer__texte">Une autre création de Énigma, 250 boul. Charest ouest, Québec, Québec. 418-654-9823</p>
+                <p class="footer__texte">Merci à l’équipe des données ouvertes de la Ville de Québec qui a rendu disponibles le jeu de données « Épigraphes historiques » sous licence CC BY. 
+                        Ces données ont été adaptées pour mieux répondre aux besoins pédagogiques et servir de prétexte à la « Chasse aux épigraphes ». </p>
+                <p class="footer__texte">Une réalisation de Maxime Riverin, Christiana Larisse, Jude Ndjila et Antoine Gagnon  © Tous droits réservés 2026.
+                        Travail scolaire réalisé dans le cadre du programme Techniques d’intégration multimédia. Cégep de Sainte-Foy</p>
+            </div>
+
+        </div>
+    </footer>
 
 </body>
 

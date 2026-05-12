@@ -11,6 +11,7 @@
 @import 'chasse.css'; /* Stylisation du body de la page chasseepigraphes.html */
 @import 'fiches.css'; /* Stylisation du body de la page fiches.html */
 @import 'carte.css'; /* Stylisation du body de la page carte.html */
+@import 'concours.css'; /* Stylisation du body de la page concours.html */
 
 /* View Transition - Animation changement de page
  - CSS Avancé Maxime Rivein */
